@@ -26,11 +26,14 @@
 							<div class="text">
 								Comment t'appelles tu
 							</div>
-							<form type="POST" action=".">
-								<input type="text" name="nom" />
+							<form type="POST" action="getPhrase.php">
+								<input type="text" name="prenom" />
 								<input type="submit" value="// Valider //" name="valider">
 							</form>
 						</div>
+					</div>
+					<div class="thirdStep">
+
 					</div>
 				</div>
 			</div>
