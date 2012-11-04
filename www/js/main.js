@@ -59,5 +59,5 @@ function initForm(block, insultes) {
 
 $(document).ready(function(){
 	init();
-	$("#leftBlock").click();
+	//$("#leftBlock").click();
 });

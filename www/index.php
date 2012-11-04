@@ -27,7 +27,18 @@
 								Comment t'appelles tu
 							</div>
 							<form type="POST" action="getPhrase.php">
-								<input type="text" name="prenom" />
+								<input type="text" name="preif (blockClick) {
+			return;
+		}
+		blockClick = true;
+		var pos = block.position();
+		block.children(".content").children(".firstStep").hide();
+		$(depBlock).css('display', 'none');
+		$("#separatorBlock").hide();
+		block.transition({width: "100%"}, 1000, function(){
+			$(this).children(".content").children(".secondStep").show();
+		});
+		$("#logo").transition({opacity: 0}, 500);nom" />
 								<input type="submit" value="// Valider //" name="valider">
 							</form>
 						</div>
