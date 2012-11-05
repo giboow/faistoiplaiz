@@ -114,13 +114,16 @@
 								<div class="rightSeparator"></div>
 							</div>
 							<div class="form">
-								<form action="getPhrase.php" onsubmit="javascript:validName()">
+								<form action="/getPhrase.php">
 									<input type="text" name="prenom" placeholder="PRENOM" autocomplete="off"></input>
 									<input type="submit" name="valider" value="//VALIDER//" />
 								</form>
 							</div>
 						</div>
-						<div id="third">
+						<div id="final">
+							<div id="postit" class="bleu">
+
+							</div>
 						</div>
 					</div>
 				</div>

@@ -84,7 +84,7 @@ header#homeHeader{
 			margin: 10px auto;
 			width: 222px;
 			height: 75px;
-			background-image: url("/img/logo.png");
+			background-image: url("/img/Logo.png");
 		}
 		.text{
 			text-align: center;
@@ -328,6 +328,52 @@ footer#homeFooter{
 				cursor: pointer
 			}
 
+		}
+	}
+	#final {
+		display: none;
+		width: 100%;
+		height: 100%;
+		#postit{
+			width: 309px;
+			height: 398px;
+			margin : 0 auto;
+			background-repeat: no-repeat;
+			font-size: 50px;
+			text-transform: uppercase;
+		}
+		#postit.jaune{
+			background-image : url('/img/affiches/jaune.png');
+		}
+		#postit.bleu{
+			background-image : url('/img/affiches/bleu.png');
+		}
+		#postit.bleupastel{
+			background-image : url('/img/affiches/bleupastel.png');
+		}
+		#postit.gris{
+			background-image : url('/img/affiches/gris.png');
+		}
+		#postit.noir{
+			background-image : url('/img/affiches/noir.png');
+		}
+		#postit.noir{
+			background-image : url('/img/affiches/noir.png');
+		}
+		#postit.orange{
+			background-image : url('/img/affiches/orange.png');
+		}
+		#postit.rose{
+			background-image : url('/img/affiches/rose.png');
+		}
+		#postit.rouge{
+			background-image : url('/img/affiches/rouge.png');
+		}
+		#postit.vert{
+			background-image : url('/img/affiches/vert.png');
+		}
+		#postit.violet{
+			background-image : url('/img/affiches/violet.png');
 		}
 	}
 }

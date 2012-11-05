@@ -15,6 +15,7 @@ function initEvents(){
 	$('#rightBlock .beginBt').click(rightClick);
 	$('.thirdStep .choice .male').click(function(){sexeChoice("homme")});
 	$('.thirdStep .choice .female').click(function(){sexeChoice("femme")});
+	$('.thirdStep #second .form form').submit(validName);
 }
 
 function openHome(){
@@ -69,22 +70,45 @@ function sexeChoice(sexe) {
 }
 
 function validName(){
-	var form = $('.thirdStep #second .form form');
-	var prenom = form.find("input[name=prenom]");
+	var form = $(this);
+	var prenom = form.find("input[name=prenom]").val();
 	var url = form.attr('action');
-	var datas = {
-		prenom : prenom,
-		sexe : $(window).data('sexe'),
-		insulte: $(window).data('insulte')
-	};
+	var datas = new Object;
+	datas.prenom = prenom,
+	datas.sexe = $(document).data('sexe');
+	datas.insulte = $(document).data('insulte');
 	$.ajax({
 		url: url,
 		type: "POST",
 		data : datas,
 		dataType: "json",
 	}).success(function(response){
-		alert(response);
+		$.extend(datas, response);
+		drawFinal(datas);
+		return false;
 	});
 
 	return false;
+}
+
+
+function drawFinal(datas)
+{
+	var time = 1000;
+	console.log(datas);
+	var prenom = datas.prenom;
+	var phrase = datas.phrase;
+	var color = datas.color;
+	var link = datas.link;
+
+	var finalStr = new String(phrase);
+	finalStr = finalStr.replace("{prenom}", '<span class="prenom">'+prenom+'</span>');
+	$(".thirdStep #final #postit").html(finalStr);
+	console.log(finalStr);
+	$(".thirdStep #second").transition({opacity : 0}, time, function() {
+		$(this).remove();
+		$(".thirdStep #final").css({opacity:0}).show(0);
+		$(".thirdStep #final").transition({opacity : 1});
+	});
+
 }

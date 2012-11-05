@@ -83,7 +83,7 @@ header#homeHeader #logo .imgLogo {
   margin: 10px auto;
   width: 222px;
   height: 75px;
-  background-image: url("/img/logo.png");
+  background-image: url("/img/Logo.png");
 }
 /* line 89, ../../compass/style2.scss */
 header#homeHeader #logo .text {
@@ -364,4 +364,63 @@ footer#homeFooter #team {
 .thirdStep #second .form input[type=submit]:hover {
   color: #15b3f1;
   cursor: pointer;
+}
+/* line 333, ../../compass/style2.scss */
+.thirdStep #final {
+  display: none;
+  width: 100%;
+  height: 100%;
+}
+/* line 337, ../../compass/style2.scss */
+.thirdStep #final #postit {
+  width: 309px;
+  height: 398px;
+  margin: 0 auto;
+  background-repeat: no-repeat;
+  font-size: 50px;
+  text-transform: uppercase;
+}
+/* line 345, ../../compass/style2.scss */
+.thirdStep #final #postit.jaune {
+  background-image: url("/img/affiches/jaune.png");
+}
+/* line 348, ../../compass/style2.scss */
+.thirdStep #final #postit.bleu {
+  background-image: url("/img/affiches/bleu.png");
+}
+/* line 351, ../../compass/style2.scss */
+.thirdStep #final #postit.bleupastel {
+  background-image: url("/img/affiches/bleupastel.png");
+}
+/* line 354, ../../compass/style2.scss */
+.thirdStep #final #postit.gris {
+  background-image: url("/img/affiches/gris.png");
+}
+/* line 357, ../../compass/style2.scss */
+.thirdStep #final #postit.noir {
+  background-image: url("/img/affiches/noir.png");
+}
+/* line 360, ../../compass/style2.scss */
+.thirdStep #final #postit.noir {
+  background-image: url("/img/affiches/noir.png");
+}
+/* line 363, ../../compass/style2.scss */
+.thirdStep #final #postit.orange {
+  background-image: url("/img/affiches/orange.png");
+}
+/* line 366, ../../compass/style2.scss */
+.thirdStep #final #postit.rose {
+  background-image: url("/img/affiches/rose.png");
+}
+/* line 369, ../../compass/style2.scss */
+.thirdStep #final #postit.rouge {
+  background-image: url("/img/affiches/rouge.png");
+}
+/* line 372, ../../compass/style2.scss */
+.thirdStep #final #postit.vert {
+  background-image: url("/img/affiches/vert.png");
+}
+/* line 375, ../../compass/style2.scss */
+.thirdStep #final #postit.violet {
+  background-image: url("/img/affiches/violet.png");
 }
