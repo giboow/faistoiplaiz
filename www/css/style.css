@@ -142,55 +142,55 @@ footer#homeFooter #team {
   text-align: center;
   text-transform: uppercase;
 }
-/* line 144, ../../compass/style.scss */
+/* line 143, ../../compass/style.scss */
 .blocks .contentBlock, #leftBlock .contentBlock, #rightBlock .contentBlock {
   height: 100%;
 }
-/* line 147, ../../compass/style.scss */
+/* line 146, ../../compass/style.scss */
 .blocks .imgBlock, #leftBlock .imgBlock, #rightBlock .imgBlock {
   width: 86px;
   height: 79px;
   margin: 20px auto;
 }
-/* line 152, ../../compass/style.scss */
+/* line 151, ../../compass/style.scss */
 .blocks .title, #leftBlock .title, #rightBlock .title {
   width: 350px;
   margin: 0 auto;
   font-size: 40px;
 }
-/* line 158, ../../compass/style.scss */
+/* line 157, ../../compass/style.scss */
 .blocks .title .middle, #leftBlock .title .middle, #rightBlock .title .middle {
   font-size: 30px;
   width: 350px;
   text-align: center;
 }
-/* line 162, ../../compass/style.scss */
+/* line 161, ../../compass/style.scss */
 .blocks .title .middle .separator, #leftBlock .title .middle .separator, #rightBlock .title .middle .separator, .blocks .title .middle .separatorLeft, #leftBlock .blocks .title .middle .separatorLeft, .blocks #leftBlock .title .middle .separatorLeft, #rightBlock .blocks .title .middle .separatorLeft, .blocks #rightBlock .title .middle .separatorLeft, .blocks #leftBlock .title .middle .separatorLeft, #leftBlock .blocks .title .middle .separatorLeft, #leftBlock .title .middle .separatorLeft, #rightBlock #leftBlock .title .middle .separatorLeft, #leftBlock #rightBlock .title .middle .separatorLeft, .blocks #rightBlock .title .middle .separatorLeft, #rightBlock .blocks .title .middle .separatorLeft, #leftBlock #rightBlock .title .middle .separatorLeft, #rightBlock #leftBlock .title .middle .separatorLeft, #rightBlock .title .middle .separatorLeft, .blocks .title .middle .separatorRight, #leftBlock .blocks .title .middle .separatorRight, .blocks #leftBlock .title .middle .separatorRight, #rightBlock .blocks .title .middle .separatorRight, .blocks #rightBlock .title .middle .separatorRight, .blocks #leftBlock .title .middle .separatorRight, #leftBlock .blocks .title .middle .separatorRight, #leftBlock .title .middle .separatorRight, #rightBlock #leftBlock .title .middle .separatorRight, #leftBlock #rightBlock .title .middle .separatorRight, .blocks #rightBlock .title .middle .separatorRight, #rightBlock .blocks .title .middle .separatorRight, #leftBlock #rightBlock .title .middle .separatorRight, #rightBlock #leftBlock .title .middle .separatorRight, #rightBlock .title .middle .separatorRight, .blocks .title .middle .thirdStep .text .rightSeparator, .thirdStep .text .blocks .title .middle .rightSeparator, #leftBlock .title .middle .thirdStep .text .rightSeparator, .thirdStep .text #leftBlock .title .middle .rightSeparator, #rightBlock .title .middle .thirdStep .text .rightSeparator, .thirdStep .text #rightBlock .title .middle .rightSeparator, .blocks .title .middle .thirdStep .text .leftSeparator, .thirdStep .text .blocks .title .middle .leftSeparator, #leftBlock .title .middle .thirdStep .text .leftSeparator, .thirdStep .text #leftBlock .title .middle .leftSeparator, #rightBlock .title .middle .thirdStep .text .leftSeparator, .thirdStep .text #rightBlock .title .middle .leftSeparator {
   width: 100px;
   margin-top: 20px;
   border-top: solid 3px;
 }
-/* line 168, ../../compass/style.scss */
+/* line 167, ../../compass/style.scss */
 .blocks .title .middle .separatorLeft, #leftBlock .title .middle .separatorLeft, #rightBlock .title .middle .separatorLeft {
   margin-left: 20px;
   float: left;
 }
-/* line 173, ../../compass/style.scss */
+/* line 172, ../../compass/style.scss */
 .blocks .title .middle .separatorRight, #leftBlock .title .middle .separatorRight, #rightBlock .title .middle .separatorRight {
   margin-right: 20px;
   float: right;
 }
-/* line 179, ../../compass/style.scss */
+/* line 178, ../../compass/style.scss */
 .blocks .title .last, #leftBlock .title .last, #rightBlock .title .last {
   color: #15b3f1;
 }
-/* line 183, ../../compass/style.scss */
+/* line 182, ../../compass/style.scss */
 .blocks .subTitle, #leftBlock .subTitle, #rightBlock .subTitle {
   width: 350px;
   margin: 20px auto;
   font-size: 14px;
 }
-/* line 188, ../../compass/style.scss */
+/* line 187, ../../compass/style.scss */
 .blocks .beginBt, #leftBlock .beginBt, #rightBlock .beginBt {
   margin: 20px auto;
   font-size: 25px;
@@ -198,7 +198,7 @@ footer#homeFooter #team {
   cursor: pointer;
 }
 
-/* line 196, ../../compass/style.scss */
+/* line 195, ../../compass/style.scss */
 .lightBg {
   background-image: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 100, color-stop(0%, #f6f6f6), color-stop(100%, #d3d3d3));
   background-image: -webkit-radial-gradient(circle contain, #f6f6f6, #d3d3d3);
@@ -208,7 +208,7 @@ footer#homeFooter #team {
   color: black;
 }
 
-/* line 201, ../../compass/style.scss */
+/* line 200, ../../compass/style.scss */
 .darkBg {
   background-image: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 100, color-stop(0%, #4d4d4d), color-stop(100%, #010101));
   background-image: -webkit-radial-gradient(circle contain, #4d4d4d, #010101);
@@ -218,93 +218,103 @@ footer#homeFooter #team {
   color: white;
 }
 
-/* line 206, ../../compass/style.scss */
+/* line 205, ../../compass/style.scss */
 #leftBlock {
   float: left;
   display: inline;
   color: black;
   margin-left: -50%;
 }
-/* line 211, ../../compass/style.scss */
+/* line 210, ../../compass/style.scss */
 #leftBlock .imgBlock {
   background-image: url("/img/pouceenlaire.png");
 }
-/* line 215, ../../compass/style.scss */
+/* line 214, ../../compass/style.scss */
 #leftBlock .contentBlock {
   margin-left: 50%;
 }
-/* line 218, ../../compass/style.scss */
+/* line 217, ../../compass/style.scss */
 #leftBlock .beginBt:hover {
   color: black;
 }
 
-/* line 225, ../../compass/style.scss */
+/* line 224, ../../compass/style.scss */
 #rightBlock {
   color: white;
   margin-left: 50%;
 }
-/* line 228, ../../compass/style.scss */
+/* line 227, ../../compass/style.scss */
 #rightBlock .imgBlock {
   background-image: url("/img/pouceenbas.png");
 }
-/* line 232, ../../compass/style.scss */
+/* line 231, ../../compass/style.scss */
 #rightBlock .contentBlock {
   margin-left: -50%;
 }
-/* line 235, ../../compass/style.scss */
+/* line 234, ../../compass/style.scss */
 #rightBlock .beginBt:hover {
   color: white;
 }
 
-/* line 240, ../../compass/style.scss */
+/* line 239, ../../compass/style.scss */
 .thirdStep {
   display: none;
 }
-/* line 242, ../../compass/style.scss */
+/* line 240, ../../compass/style.scss */
+.thirdStep .ombre {
+  width: 554px;
+  height: 36px;
+  background-image: url("/img/ombre.png");
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  padding-top: -20px;
+}
+/* line 249, ../../compass/style.scss */
 .thirdStep .content {
   height: 400px;
-  width: 320px;
+  width: 100%;
   padding-top: 100px;
   margin: 0 auto;
 }
-/* line 248, ../../compass/style.scss */
+/* line 255, ../../compass/style.scss */
 .thirdStep .text {
+  margin: 0 auto;
   font-size: 20px;
   width: 320px;
   text-align: center;
 }
-/* line 252, ../../compass/style.scss */
+/* line 260, ../../compass/style.scss */
 .thirdStep .text .separator, .thirdStep .text .blocks .title .middle .separatorLeft, .blocks .title .middle .thirdStep .text .separatorLeft, .thirdStep .text #leftBlock .title .middle .separatorLeft, #leftBlock .title .middle .thirdStep .text .separatorLeft, .thirdStep .text #rightBlock .title .middle .separatorLeft, #rightBlock .title .middle .thirdStep .text .separatorLeft, .thirdStep .text .blocks .title .middle .separatorRight, .blocks .title .middle .thirdStep .text .separatorRight, .thirdStep .text #leftBlock .title .middle .separatorRight, #leftBlock .title .middle .thirdStep .text .separatorRight, .thirdStep .text #rightBlock .title .middle .separatorRight, #rightBlock .title .middle .thirdStep .text .separatorRight, .thirdStep .text .rightSeparator, .thirdStep .text .leftSeparator {
   width: 120px;
   margin-top: 10px;
   border-top: solid 3px;
 }
-/* line 257, ../../compass/style.scss */
+/* line 265, ../../compass/style.scss */
 .thirdStep .text .rightSeparator {
   margin-left: 10px;
   float: right;
 }
-/* line 263, ../../compass/style.scss */
+/* line 271, ../../compass/style.scss */
 .thirdStep .text .leftSeparator {
   margin-right: 10px;
   float: left;
 }
-/* line 269, ../../compass/style.scss */
+/* line 277, ../../compass/style.scss */
 .thirdStep .step3, .thirdStep #first, .thirdStep #second {
   margin: 40px auto;
   text-align: center;
 }
-/* line 272, ../../compass/style.scss */
+/* line 280, ../../compass/style.scss */
 .thirdStep .step3 .title, .thirdStep #first .title, .thirdStep #second .title {
   font-size: 30px;
 }
-/* line 278, ../../compass/style.scss */
+/* line 286, ../../compass/style.scss */
 .thirdStep #first .choice {
   height: 160px;
   width: 229px;
   margin: 0 auto;
 }
-/* line 282, ../../compass/style.scss */
+/* line 290, ../../compass/style.scss */
 .thirdStep #first .choice .imgGender, .thirdStep #first .choice .male, .thirdStep #first .choice .female {
   width: 68px;
   height: 116px;
@@ -313,15 +323,15 @@ footer#homeFooter #team {
   background-repeat: no-repeat;
   cursor: pointer;
 }
-/* line 290, ../../compass/style.scss */
+/* line 298, ../../compass/style.scss */
 .thirdStep #first .choice .male {
   background-image: url("/img/homme.png");
 }
-/* line 294, ../../compass/style.scss */
+/* line 302, ../../compass/style.scss */
 .thirdStep #first .choice .female {
   background-image: url("/img/femme.png");
 }
-/* line 298, ../../compass/style.scss */
+/* line 306, ../../compass/style.scss */
 .thirdStep #first .choice .separator, .thirdStep #first .choice .blocks .title .middle .separatorLeft, .blocks .title .middle .thirdStep #first .choice .separatorLeft, .thirdStep #first .choice #leftBlock .title .middle .separatorLeft, #leftBlock .title .middle .thirdStep #first .choice .separatorLeft, .thirdStep #first .choice #rightBlock .title .middle .separatorLeft, #rightBlock .title .middle .thirdStep #first .choice .separatorLeft, .thirdStep #first .choice .blocks .title .middle .separatorRight, .blocks .title .middle .thirdStep #first .choice .separatorRight, .thirdStep #first .choice #leftBlock .title .middle .separatorRight, #leftBlock .title .middle .thirdStep #first .choice .separatorRight, .thirdStep #first .choice #rightBlock .title .middle .separatorRight, #rightBlock .title .middle .thirdStep #first .choice .separatorRight, .thirdStep #first .choice .text .rightSeparator, .thirdStep .text #first .choice .rightSeparator, .thirdStep #first .choice .text .leftSeparator, .thirdStep .text #first .choice .leftSeparator {
   margin: 20px 5px;
   width: 3px;
@@ -329,16 +339,16 @@ footer#homeFooter #team {
   background-color: black;
   float: left;
 }
-/* line 307, ../../compass/style.scss */
+/* line 315, ../../compass/style.scss */
 .thirdStep #second {
   opacity: 0;
   display: none;
 }
-/* line 311, ../../compass/style.scss */
+/* line 319, ../../compass/style.scss */
 .thirdStep #second .big {
   font-size: 45px;
 }
-/* line 315, ../../compass/style.scss */
+/* line 323, ../../compass/style.scss */
 .thirdStep #second .form input[type=text] {
   margin-top: 30px;
   width: 100%;
@@ -363,7 +373,7 @@ footer#homeFooter #team {
 .thirdStep #second .form input[type=text]::-webkit-input-placeholder {
   color: lightgrey;
 }
-/* line 328, ../../compass/style.scss */
+/* line 336, ../../compass/style.scss */
 .thirdStep #second .form input[type=submit] {
   background: transparent;
   border: 0;
@@ -371,18 +381,18 @@ footer#homeFooter #team {
   text-transform: uppercase;
   font-size: 1.2em;
 }
-/* line 335, ../../compass/style.scss */
+/* line 343, ../../compass/style.scss */
 .thirdStep #second .form input[type=submit]:hover {
   color: #15b3f1;
   cursor: pointer;
 }
-/* line 342, ../../compass/style.scss */
+/* line 350, ../../compass/style.scss */
 .thirdStep #final {
   display: none;
   width: 100%;
   height: 100%;
 }
-/* line 346, ../../compass/style.scss */
+/* line 354, ../../compass/style.scss */
 .thirdStep #final #postit {
   width: 309px;
   height: 398px;
@@ -391,101 +401,101 @@ footer#homeFooter #team {
   font-size: 35px;
   text-transform: uppercase;
 }
-/* line 353, ../../compass/style.scss */
+/* line 361, ../../compass/style.scss */
 .thirdStep #final #postit .content {
   width: 100%;
   height: auto;
   padding: 0;
 }
-/* line 354, ../../compass/style.scss */
+/* line 362, ../../compass/style.scss */
 .thirdStep #final #postit .content .text {
   width: 100%;
 }
-/* line 356, ../../compass/style.scss */
+/* line 364, ../../compass/style.scss */
 .thirdStep #final #postit .content .text .logoSeparator {
   width: 90px;
   border-top: solid 3px white;
   margin-top: 13px;
 }
-/* line 361, ../../compass/style.scss */
+/* line 369, ../../compass/style.scss */
 .thirdStep #final #postit .content .text .logoSeparator.left {
   float: left;
   margin-left: 10px;
 }
-/* line 365, ../../compass/style.scss */
+/* line 373, ../../compass/style.scss */
 .thirdStep #final #postit .content .text .logoSeparator.right {
   float: right;
   margin-right: 10px;
 }
-/* line 369, ../../compass/style.scss */
+/* line 377, ../../compass/style.scss */
 .thirdStep #final #postit .content .text .logo {
   width: 82px;
   height: 27px;
   margin: 0 auto;
 }
-/* line 378, ../../compass/style.scss */
+/* line 386, ../../compass/style.scss */
 .thirdStep #final #postit .content .phrase {
   padding: 20px 10px 30px 10px;
 }
-/* line 380, ../../compass/style.scss */
+/* line 388, ../../compass/style.scss */
 .thirdStep #final #postit .content .phrase .prenom {
   color: white;
 }
-/* line 384, ../../compass/style.scss */
+/* line 392, ../../compass/style.scss */
 .thirdStep #final #postit .content .separatorBottom {
   border-top: solid 3px white;
   width: 289px;
   margin-left: 10px;
 }
-/* line 392, ../../compass/style.scss */
+/* line 400, ../../compass/style.scss */
 .thirdStep #final #postit.jaune {
   background-image: url("/img/affiches/jaune.png");
 }
-/* line 396, ../../compass/style.scss */
+/* line 404, ../../compass/style.scss */
 .thirdStep #final #postit.bleu {
   background-image: url("/img/affiches/bleu.png");
 }
-/* line 398, ../../compass/style.scss */
+/* line 406, ../../compass/style.scss */
 .thirdStep #final #postit.bleu .logo {
   background-image: url("/img/logo/logovertfluo.png");
 }
-/* line 401, ../../compass/style.scss */
+/* line 409, ../../compass/style.scss */
 .thirdStep #final #postit.bleu .prenom {
   color: #37ec8a;
 }
-/* line 405, ../../compass/style.scss */
+/* line 413, ../../compass/style.scss */
 .thirdStep #final #postit.bleupastel {
   background-image: url("/img/affiches/bleupastel.png");
 }
-/* line 408, ../../compass/style.scss */
+/* line 416, ../../compass/style.scss */
 .thirdStep #final #postit.gris {
   background-image: url("/img/affiches/gris.png");
 }
-/* line 411, ../../compass/style.scss */
+/* line 419, ../../compass/style.scss */
 .thirdStep #final #postit.noir {
   background-image: url("/img/affiches/noir.png");
 }
-/* line 414, ../../compass/style.scss */
+/* line 422, ../../compass/style.scss */
 .thirdStep #final #postit.noir {
   background-image: url("/img/affiches/noir.png");
 }
-/* line 417, ../../compass/style.scss */
+/* line 425, ../../compass/style.scss */
 .thirdStep #final #postit.orange {
   background-image: url("/img/affiches/orange.png");
 }
-/* line 420, ../../compass/style.scss */
+/* line 428, ../../compass/style.scss */
 .thirdStep #final #postit.rose {
   background-image: url("/img/affiches/rose.png");
 }
-/* line 423, ../../compass/style.scss */
+/* line 431, ../../compass/style.scss */
 .thirdStep #final #postit.rouge {
   background-image: url("/img/affiches/rouge.png");
 }
-/* line 426, ../../compass/style.scss */
+/* line 434, ../../compass/style.scss */
 .thirdStep #final #postit.vert {
   background-image: url("/img/affiches/vert.png");
 }
-/* line 429, ../../compass/style.scss */
+/* line 437, ../../compass/style.scss */
 .thirdStep #final #postit.violet {
   background-image: url("/img/affiches/violet.png");
 }
