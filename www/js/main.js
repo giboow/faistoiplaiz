@@ -108,7 +108,7 @@ function drawFinal(datas)
 	$(".thirdStep #second").transition({opacity : 0}, time, function() {
 		$(this).remove();
 		$(".thirdStep #final").css({opacity:0}).show(0);
-		$(".thirdStep #final").transition({opacity : 1});
+		$(".thirdStep #final").transition({opacity : 1}, time);
 	});
 
 }

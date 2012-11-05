@@ -4,11 +4,11 @@
 		<title>Fais toi plaiz</title>
 
 		<meta charset="utf-8">
-		<link rel="stylesheet" type="text/css" href="css/style2.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
 		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
 		<script type="text/javascript" src="js/jquery.transit.js"></script>
 		<script type="text/javascript" src="http://jquery.offput.ca/js/jquery.timers.js"></script>
-		<script type="text/javascript" src="js/main2.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
 	</head>
 	<body>
 		<div id="site">
