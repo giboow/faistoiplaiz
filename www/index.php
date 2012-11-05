@@ -84,9 +84,9 @@
 									<div class="male"></div>
 									<div class="separator"></div>
 									<div class="female"></div>
+									<div class="clear"></div>
 								</div>
 							</div>
-
 							<div class="text">
 								?
 								<div class="leftSeparator"></div>
@@ -122,7 +122,16 @@
 						</div>
 						<div id="final">
 							<div id="postit" class="bleu">
-
+							<div class="content">
+								<div class="text">
+									<div class="left logoSeparator"></div>
+									<div class="right logoSeparator"></div>
+									<div class="logo"></div>
+									<div class="clear"></div>
+								</div>
+								<div class="phrase"></div>
+								<div class="separatorBottom"></div>
+								</div>
 							</div>
 						</div>
 					</div>

@@ -11,6 +11,7 @@ function initElements(){
 
 function initEvents(){
 	$(window).oneTime("1s", openHome);
+	$('header#homeHeader .imgLogo').click(function(){$(document).attr('location', '/');});
 	$('#leftBlock .beginBt').click(leftClick);
 	$('#rightBlock .beginBt').click(rightClick);
 	$('.thirdStep .choice .male').click(function(){sexeChoice("homme")});
@@ -103,11 +104,15 @@ function drawFinal(datas)
 
 	var finalStr = new String(phrase);
 	finalStr = finalStr.replace("{prenom}", '<span class="prenom">'+prenom+'</span>');
-	$(".thirdStep #final #postit").html(finalStr);
-	console.log(finalStr);
+	$(".thirdStep #final #postit .content .phrase").html(finalStr);
+
 	$(".thirdStep #second").transition({opacity : 0}, time, function() {
 		$(this).remove();
 		$(".thirdStep #final").css({opacity:0}).show(0);
+		$(".thirdStep #final #postit .content").css(
+			'padding-top',
+			($(".thirdStep #final #postit").height() - $(".thirdStep #final #postit .content").height())/2
+		);
 		$(".thirdStep #final").transition({opacity : 1}, time);
 	});
 
