@@ -116,7 +116,7 @@
 							</div>
 							<div class="form">
 								<form action="/getPhrase.php">
-									<input type="text" name="prenom" placeholder="PRENOM" autocomplete="off"></input>
+									<input type="text" name="prenom" placeholder="ENTRE TON PRENOM" autocomplete="off"></input>
 									<div class="ombre"></div>
 									<input type="submit" name="valider" value="//VALIDER//" />
 								</form>

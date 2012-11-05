@@ -65,7 +65,9 @@ function sexeChoice(sexe) {
 	$(document).data('sexe', sexe);
 	$('.thirdStep #first').transition({opacity : 0}, time, function(){
 		$(this).remove();
-		$('.thirdStep #second').show(0).transition({opacity : 1}, time);
+		$('.thirdStep #second').show(0).transition({opacity : 1}, time, function(){
+			$('.thirdStep #second form input[name=prenom]').focus();
+		});
 	})
 
 }
