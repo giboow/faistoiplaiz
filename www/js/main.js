@@ -111,6 +111,20 @@ function drawFinal(datas)
 	$(".thirdStep #second").transition({opacity : 0}, time, function() {
 		$(this).remove();
 		$(".thirdStep #final").css({opacity:0}).show(0);
+		var postit = $(".thirdStep #final #postit");
+		var fbSharing = $(".thirdStep #final .fbSharing");
+		postit.css('left', $(window).width()/2-postit.width()/2);
+
+		var position = postit.position();
+		fbSharing.css('left', position.left-33);
+		fbSharing.css('top', position.top+postit.width()-40);
+		fbSharing.hover(function(){
+			$(this).stop();
+			$(this).transition({ left : $(".thirdStep #final #postit").position().left - $(this).width()+5});
+		}, function(){
+			$(this).stop();
+			fbSharing.transition({ left : $(".thirdStep #final #postit").position().left-33});
+		})
 		$(".thirdStep #final #postit .content").css(
 			'padding-top',
 			($(".thirdStep #final #postit").height() - $(".thirdStep #final #postit .content").height())/2
