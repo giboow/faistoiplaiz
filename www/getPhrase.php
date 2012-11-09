@@ -25,6 +25,6 @@ if(isset($inputDatas['sexe'])) {
 	$sexe = $inputDatas['sexe'];
 }
 $phrase = getPhrase($bdd, $sexe, $insulte);
-$phrase["phrase"] = htmlspecialchars(utf8_encode($phrase["phrase"]), ENT_HTML5);
+$phrase["phrase"] = htmlspecialchars(utf8_encode($phrase["phrase"]));
 
 echo json_encode($phrase);
