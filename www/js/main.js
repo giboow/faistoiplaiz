@@ -14,8 +14,8 @@ function initEvents(){
 	$('header#homeHeader .imgLogo').click(function(){$(document).attr('location', '/');});
 	$('#leftBlock .beginBt').click(leftClick);
 	$('#rightBlock .beginBt').click(rightClick);
-	$('.thirdStep .choice .male').click(function(){sexeChoice("homme")});
-	$('.thirdStep .choice .female').click(function(){sexeChoice("femme")});
+	$('.thirdStep .choice .male').click(function(){sexeChoice("M")});
+	$('.thirdStep .choice .female').click(function(){sexeChoice("F")});
 	$('.thirdStep #second .form form').submit(validName);
 }
 
@@ -43,7 +43,7 @@ function leftClick(){
 		$('.secondStep').remove();
 	});
 	$('.secondStep #rightBlock').transition({"margin-left" : "100%"}, time);
-	$(document).data('insulte', false);
+	$(document).data('insulte', 0);
 }
 
 function rightClick(){
@@ -56,7 +56,7 @@ function rightClick(){
 		$('.thirdStep').css('display', 'block').addClass('darkBg');
 		$('.secondStep').remove();
 	});
-	$(document).data('insulte', true);
+	$(document).data('insulte', 1);
 }
 
 

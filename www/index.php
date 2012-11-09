@@ -123,7 +123,7 @@
 							</div>
 						</div>
 						<div id="final">
-							<div id="postit" class="bleupastel">
+							<div id="postit" class="jaune">
 								<div class="content">
 									<div class="text">
 										<div class="left logoSeparator"></div>

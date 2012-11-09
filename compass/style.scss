@@ -11,6 +11,7 @@ $dark : #010101;
 
 $vertfluo : #37EC8A;
 $jaune : #DFE930;
+$vert: #6AAF39;
 
 $lightBlue : #15B3F1;
 
@@ -421,6 +422,12 @@ footer#homeFooter{
 		}
 		#postit.jaune{
 			background-image : url('/img/affiches/jaune.png');
+			.logo {
+				background-image : url('/img/logo/logovert.png');
+			}
+			.prenom {
+				color: $vert;
+			}
 
 		}
 		#postit.bleu{
@@ -447,23 +454,50 @@ footer#homeFooter{
 		#postit.noir{
 			background-image : url('/img/affiches/noir.png');
 		}
-		#postit.noir{
-			background-image : url('/img/affiches/noir.png');
-		}
-		#postit.orange{
+ 		#postit.orange{
 			background-image : url('/img/affiches/orange.png');
+			.logo {
+				background-image : url('/img/logo/logoblanc.png');
+			}
+			.prenom {
+				color: $white;
+			}
 		}
 		#postit.rose{
 			background-image : url('/img/affiches/rose.png');
+			.logo {
+				background-image : url('/img/logo/logojaune.png');
+			}
+			.prenom {
+				color: $jaune;
+			}
 		}
 		#postit.rouge{
 			background-image : url('/img/affiches/rouge.png');
+			.logo {
+				background-image : url('/img/logo/logojaune.png');
+			}
+			.prenom {
+				color: $jaune;
+			}
 		}
 		#postit.vert{
 			background-image : url('/img/affiches/vert.png');
+			.logo {
+				background-image : url('/img/logo/logoblanc.png');
+			}
+			.prenom {
+				color: $white;
+			}
 		}
 		#postit.violet{
 			background-image : url('/img/affiches/violet.png');
+			.logo {
+				background-image : url('/img/logo/logojaune.png');
+			}
+			.prenom {
+				color: $jaune;
+			}
 		}
 	}
 }
