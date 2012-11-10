@@ -24,6 +24,6 @@ $inputDatas['id'] = $datas['id'];
 if(!$id) {
 	$datas["fbUrl"] = generateUrl($inputDatas);
 }
-$datas["phrase"] = htmlspecialchars(utf8_encode($datas["phrase"]));
+$datas["phrase"] = htmlentities(utf8_encode($datas["phrase"]), ENT_XHTML);
 
 echo json_encode($datas);

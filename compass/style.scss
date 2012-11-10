@@ -420,6 +420,13 @@ footer#homeFooter{
 			height: 410px;
 			background-position: bottom;
 		}
+		.next{
+			position: absolute;
+			background-image : url('/img/next.png');
+			background-repeat: no-repeat;
+			width: 75px;
+			height: 64px;
+		}
 		#postit.jaune{
 			background-image : url('/img/affiches/jaune.png');
 			.logo {

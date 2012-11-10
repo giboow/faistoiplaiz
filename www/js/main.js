@@ -8,11 +8,16 @@ $(window).resize(function(){
 
 		var postit = $(".thirdStep #final #postit");
 		var fbSharing = $(".thirdStep #final .fbSharing");
+		var next = $(".thirdStep #final .next");
 		postit.css('left', $(window).width()/2-postit.width()/2);
 
 		var position = postit.position();
 		fbSharing.css('left', position.left-33);
-		fbSharing.css('top', position.top+postit.width()-40);
+		fbSharing.css('top', position.top+postit.height()*2/3);
+
+		next.css('left', position.left+postit.width()+next.width()/2);
+		next.css('top', position.top+postit.height()/2);
+
 });
 
 
@@ -48,6 +53,8 @@ function initEvents(){
 		$(this).stop();
 		fbSharing.transition({ left : $(".thirdStep #final #postit").position().left-33});
 	})
+
+	$(".thirdStep #final .next").click(nextPhrase)
 }
 
 function openHome(callback){
@@ -136,6 +143,12 @@ function validName(){
 }
 
 
+function nextPhrase() {
+	$(".thirdStep #final").transition({opacity:0}, function(){
+		validName();
+	}, 1000);
+}
+
 
 function drawFinal(datas)
 {
@@ -165,7 +178,8 @@ function drawFinal(datas)
 	$(".thirdStep #second").transition({opacity : 0}, time, function() {
 		$(".thirdStep #final *").show();
 		if(hideFb) {
-			fbSharing.hide();
+			fbSharing.unbind('click').hide();
+			$(".thirdStep #final .next").unbind('click').hide();
 		}
 		$(this).hide();
 		$(".thirdStep #final").css({opacity:0}).show(0);

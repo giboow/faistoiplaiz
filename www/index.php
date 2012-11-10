@@ -151,8 +151,10 @@
 									<div class="separatorBottom"></div>
 								</div>
 							</div>
+							<div class="next"></div>
 							<div class="fbSharing"></div>
 							<div class="ombre"></div>
+							<div class="clear"></div>
 						</div>
 					</div>
 				</div>

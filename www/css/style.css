@@ -471,106 +471,114 @@ footer#homeFooter #team {
   background-position: bottom;
 }
 /* line 423, ../../compass/style.scss */
+.thirdStep #final .next {
+  position: absolute;
+  background-image: url("/img/next.png");
+  background-repeat: no-repeat;
+  width: 75px;
+  height: 64px;
+}
+/* line 430, ../../compass/style.scss */
 .thirdStep #final #postit.jaune {
   background-image: url("/img/affiches/jaune.png");
 }
-/* line 425, ../../compass/style.scss */
+/* line 432, ../../compass/style.scss */
 .thirdStep #final #postit.jaune .logo {
   background-image: url("/img/logo/logovert.png");
 }
-/* line 428, ../../compass/style.scss */
+/* line 435, ../../compass/style.scss */
 .thirdStep #final #postit.jaune .prenom {
   color: #6aaf39;
 }
-/* line 433, ../../compass/style.scss */
+/* line 440, ../../compass/style.scss */
 .thirdStep #final #postit.bleu {
   background-image: url("/img/affiches/bleu.png");
 }
-/* line 435, ../../compass/style.scss */
+/* line 442, ../../compass/style.scss */
 .thirdStep #final #postit.bleu .logo {
   background-image: url("/img/logo/logovertfluo.png");
 }
-/* line 438, ../../compass/style.scss */
+/* line 445, ../../compass/style.scss */
 .thirdStep #final #postit.bleu .prenom {
   color: #37ec8a;
 }
-/* line 442, ../../compass/style.scss */
+/* line 449, ../../compass/style.scss */
 .thirdStep #final #postit.bleupastel {
   background-image: url("/img/affiches/bleupastel.png");
 }
-/* line 444, ../../compass/style.scss */
+/* line 451, ../../compass/style.scss */
 .thirdStep #final #postit.bleupastel .logo {
   background-image: url("/img/logo/logojaune.png");
 }
-/* line 447, ../../compass/style.scss */
+/* line 454, ../../compass/style.scss */
 .thirdStep #final #postit.bleupastel .prenom {
   color: #dfe930;
 }
-/* line 451, ../../compass/style.scss */
+/* line 458, ../../compass/style.scss */
 .thirdStep #final #postit.gris {
   background-image: url("/img/affiches/gris.png");
 }
-/* line 454, ../../compass/style.scss */
+/* line 461, ../../compass/style.scss */
 .thirdStep #final #postit.noir {
   background-image: url("/img/affiches/noir.png");
 }
-/* line 457, ../../compass/style.scss */
+/* line 464, ../../compass/style.scss */
 .thirdStep #final #postit.orange {
   background-image: url("/img/affiches/orange.png");
 }
-/* line 459, ../../compass/style.scss */
+/* line 466, ../../compass/style.scss */
 .thirdStep #final #postit.orange .logo {
   background-image: url("/img/logo/logoblanc.png");
 }
-/* line 462, ../../compass/style.scss */
+/* line 469, ../../compass/style.scss */
 .thirdStep #final #postit.orange .prenom {
   color: white;
 }
-/* line 466, ../../compass/style.scss */
+/* line 473, ../../compass/style.scss */
 .thirdStep #final #postit.rose {
   background-image: url("/img/affiches/rose.png");
 }
-/* line 468, ../../compass/style.scss */
+/* line 475, ../../compass/style.scss */
 .thirdStep #final #postit.rose .logo {
   background-image: url("/img/logo/logojaune.png");
 }
-/* line 471, ../../compass/style.scss */
+/* line 478, ../../compass/style.scss */
 .thirdStep #final #postit.rose .prenom {
   color: #dfe930;
 }
-/* line 475, ../../compass/style.scss */
+/* line 482, ../../compass/style.scss */
 .thirdStep #final #postit.rouge {
   background-image: url("/img/affiches/rouge.png");
 }
-/* line 477, ../../compass/style.scss */
+/* line 484, ../../compass/style.scss */
 .thirdStep #final #postit.rouge .logo {
   background-image: url("/img/logo/logojaune.png");
 }
-/* line 480, ../../compass/style.scss */
+/* line 487, ../../compass/style.scss */
 .thirdStep #final #postit.rouge .prenom {
   color: #dfe930;
 }
-/* line 484, ../../compass/style.scss */
+/* line 491, ../../compass/style.scss */
 .thirdStep #final #postit.vert {
   background-image: url("/img/affiches/vert.png");
 }
-/* line 486, ../../compass/style.scss */
+/* line 493, ../../compass/style.scss */
 .thirdStep #final #postit.vert .logo {
   background-image: url("/img/logo/logoblanc.png");
 }
-/* line 489, ../../compass/style.scss */
+/* line 496, ../../compass/style.scss */
 .thirdStep #final #postit.vert .prenom {
   color: white;
 }
-/* line 493, ../../compass/style.scss */
+/* line 500, ../../compass/style.scss */
 .thirdStep #final #postit.violet {
   background-image: url("/img/affiches/violet.png");
 }
-/* line 495, ../../compass/style.scss */
+/* line 502, ../../compass/style.scss */
 .thirdStep #final #postit.violet .logo {
   background-image: url("/img/logo/logojaune.png");
 }
-/* line 498, ../../compass/style.scss */
+/* line 505, ../../compass/style.scss */
 .thirdStep #final #postit.violet .prenom {
   color: #dfe930;
 }
