@@ -1,16 +1,32 @@
 <!DOCTYPE html>
 <html>
+	<?php
+	include_once 'config/functions.php';
+	?>
 	<head>
 		<title>Fais toi plaiz</title>
 
 		<meta charset="utf-8">
 		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<style type="text/css">
+			<?php if (isset($_GET['datas'])) :?>
+				.firstStep{
+					display: none;
+				}
+			<?php endif;?>
+		</style>
 		<script type="text/javascript" src="/js/jquery-1.8.2.min.js"></script>
 		<script type="text/javascript" src="/js/jquery.transit.js"></script>
 		<script type="text/javascript" src="/js/jquery.timers.js"></script>
+		<script type="text/javascript">
+			<?php if (isset($_GET['datas'])) :?>
+				$(document).data('encodedData', jQuery.parseJSON('<?php echo  json_encode(decodeData($_GET['datas']));?>'));
+			<?php endif;?>
+		</script>
 		<script type="text/javascript" src="/js/main.js"></script>
 	</head>
 	<body>
+
 		<div id="site">
 			<header id="homeHeader">
 				<div id="logo">

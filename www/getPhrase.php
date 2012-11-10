@@ -1,19 +1,8 @@
 <?php
-include_once 'config/app.config.php';
-
-function getPhrase($bdd, $sexe='M', $insulte=true) {
-	if ($insulte) {
-		$insulte = 1;
-	} else {
-		$insulte = 0;
-	}
-	$sql = 'SELECT * FROM phrases WHERE sexe="'.$sexe.'" AND insulte='.$insulte.' ORDER BY RAND() LIMIT 1';
-	$select =  $bdd->query($sql);
-	$datas = $select->setFetchMode(PDO::FETCH_ASSOC);
-	return $select->fetch();
-}
+include_once 'config/functions.php';
 
 $inputDatas = $_POST;
+
 
 $insulte = false;
 if(isset($inputDatas['insulte'])) {
@@ -24,7 +13,17 @@ $sexe = 'M';
 if(isset($inputDatas['sexe'])) {
 	$sexe = $inputDatas['sexe'];
 }
-$phrase = getPhrase($bdd, $sexe, $insulte);
-$phrase["phrase"] = htmlspecialchars(utf8_encode($phrase["phrase"]));
 
-echo json_encode($phrase);
+$id=null;
+if (isset($inputDatas['id'])) {
+	$id = $inputDatas['id'];
+}
+
+$datas = getPhrase($bdd, $sexe, $insulte, $id);
+$inputDatas['id'] = $datas['id'];
+if(!$id) {
+	$datas["fbUrl"] = generateUrl($inputDatas);
+}
+$datas["phrase"] = htmlspecialchars(utf8_encode($datas["phrase"]));
+
+echo json_encode($datas);
