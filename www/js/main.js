@@ -194,7 +194,7 @@ function drawFinal(datas)
 	if(typeof(link)!='string') {
 		hideFb = true;
 	} else {
-		fbSharing.click(function(){
+		fbSharing.unbind('click').click(function(){
 			window.open(link);
 		});
 	}
