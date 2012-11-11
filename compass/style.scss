@@ -136,13 +136,14 @@ footer#homeFooter{
 
 
 .blocks{
-	padding-top: 100px;
+	padding-top: 1px;
 	width: 100%;
 	height: 100%;
 	text-align : center;
 	text-transform: uppercase;
+	cursor: pointer;
 	.contentBlock{
-		height: 100%;
+		//height: 100%;
 	}
 	.imgBlock {
 		width: 86px;
@@ -224,7 +225,12 @@ footer#homeFooter{
 	.beginBt:hover{
 		color: $black;
 	}
+}
 
+#leftBlock:hover{
+	.beginBt{
+		color: $black;
+	}
 }
 
 
@@ -239,6 +245,12 @@ footer#homeFooter{
 		margin-left: -50%;
 	}
 	.beginBt:hover{
+		color: $white;
+	}
+}
+
+#rightBlock:hover{
+	.beginBt{
 		color: $white;
 	}
 }

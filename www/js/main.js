@@ -5,6 +5,11 @@ $(document).ready(function(){
 
 $(window).resize(function(){
 
+		$('.secondStep .contentBlock').css({
+		    "margin-top": function(){
+		    	return ($(window).height()  - $(this).height())/2- 103;
+		    },
+		})
 
 		var postit = $(".thirdStep #final #postit");
 		var fbSharing = $(".thirdStep #final .fbSharing");
@@ -42,8 +47,8 @@ function initEvents(){
 
 
 	$('header#homeHeader .imgLogo').click(function(){$(document).attr('location', '/');});
-	$('#leftBlock .beginBt').click(leftClick);
-	$('#rightBlock .beginBt').click(rightClick);
+	$('#leftBlock').click(leftClick);
+	$('#rightBlock').click(rightClick);
 	$('.thirdStep .choice .male').click(function(){sexeChoice("M")});
 	$('.thirdStep .choice .female').click(function(){sexeChoice("F")});
 	$('.thirdStep #second .form form').submit(validName);
@@ -61,6 +66,8 @@ function initEvents(){
 }
 
 function openHome(callback){
+
+	$(window).resize();
 	$('.firstStep').transition({opacity : 0}, function(){
 		$(this).hide(0);
 		var time = 1000;
@@ -74,6 +81,7 @@ function openHome(callback){
 			}
 		});
 		$('footer#homeFooter').transition({opacity : 1}, time);
+
 
 	});
 }

@@ -54,11 +54,11 @@
 							</div>
 							<div class="subTitle">
 								<div class="text">
-									T'es un peu triste?<br />
+									T'es un peu triste ?<br />
 									Remonte toi le moral en recevant<br />
-									un compliment!<br />
+									un compliment !<br />
 								</div>
-								<div class="beginBt">//commencer\\</div>
+								<div class="beginBt">// commencer \\</div>
 							</div>
 						</div>
 					</div>
@@ -76,11 +76,11 @@
 							</div>
 							<div class="subTitle">
 								<div class="text">
-									T'as besoin de te d&eacute;fouler?<br />
+									T'as besoin de te d&eacute;fouler ?<br />
 									Choisis ta cible et taille la avec<br />
-									une insulte bien sentie!
+									une insulte !
 								</div>
-								<div class="beginBt">//commencer\\</div>
+								<div class="beginBt">// commencer \\</div>
 							</div>
 						</div>
 					</div>
