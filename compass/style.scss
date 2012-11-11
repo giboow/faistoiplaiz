@@ -7,7 +7,8 @@ $black : #000000;
 $lightGrey : #F6F6F6;
 $grey : #D3D3D3;
 $lightDark :#4D4D4D;
-$dark : #010101;
+$dark : #1C1C1C;
+
 
 $vertfluo : #37EC8A;
 $jaune : #DFE930;
@@ -310,28 +311,34 @@ footer#homeFooter{
 		@extend .step3;
 		.choice {
 			height: 160px;
-			width: 229px;
+			width: 275px;
 			margin: 0 auto;
 			.imgGender{
-				width: 68px;
-				height: 116px;
-				float: left;
-				margin : 20px;
+				width: 90px;
+				height: 140px;
 				background-repeat:no-repeat;
 				cursor: pointer;
+				float: left;
+				margin: 20px;
 			}
 			.male{
 				@extend .imgGender;
 				background-image: url('/img/homme.png');
 			}
+			.male:hover {
+				background-image: url('/img/homme_survol.png');
+			}
 			.female{
 				@extend .imgGender;
 				background-image: url('/img/femme.png');
 			}
+			.female:hover{
+				background-image: url('/img/femme_survol.png');
+			}
 			.separator{
 				margin: 20px 5px;
 				//width: 3px;
-				height: 106px;
+				height: 130px;
 				border-left: solid 3px;
 				float: left;
 			}

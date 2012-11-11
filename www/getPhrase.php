@@ -26,4 +26,18 @@ if(!$id) {
 }
 $datas["phrase"] = htmlentities(utf8_encode($datas["phrase"]), ENT_XHTML);
 
+
+$colors = array(
+	'jaune',
+	'bleu',
+	'bleupastel',
+	'orange',
+	'rose',
+	'rouge',
+	'vert',
+	'violet'
+);
+
+$datas["color"] = $colors[array_rand($colors)];
+
 echo json_encode($datas);

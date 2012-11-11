@@ -100,8 +100,8 @@
 									<div class="female"></div>
 									<div class="separator"></div>
 									<div class="male"></div>
-									<div class="clear"></div>
 								</div>
+								<div class="clear"></div>
 							</div>
 							<div class="text">
 								?
@@ -119,11 +119,6 @@
 							<div class='title'>
 								<div class="upper big">Comment</div>
 								<div class="upper">t'appelles tu</div>
-								<div class="choice">
-									<div class="female"></div>
-									<div class="separator"></div>
-									<div class="male"></div>
-								</div>
 							</div>
 							<div class="text">
 								?
@@ -134,7 +129,7 @@
 								<form action="/getPhrase.php">
 									<input type="text" name="prenom" placeholder="ENTRE TON PRENOM" autocomplete="off"></input>
 									<div class="ombre"></div>
-									<input type="submit" name="valider" value="//VALIDER//" />
+									<input type="submit" name="valider" value="// VALIDER //" />
 								</form>
 							</div>
 						</div>

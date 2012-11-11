@@ -186,6 +186,7 @@ function drawFinal(datas)
 	var finalStr = new String(phrase);
 	finalStr = finalStr.replace("{prenom}", '<span class="prenom">'+prenom+'</span>');
 	$(".thirdStep #final #postit .content .phrase").html(finalStr);
+	$(".thirdStep #final #postit").removeClass().addClass(color);
 
 	var fbSharing = $(".thirdStep #final .fbSharing");
 
