@@ -97,9 +97,9 @@
 							<div class='title'>
 								<span class="upper">Fille</span> ou <span class="upper">Gar&ccedil;on</span>
 								<div class="choice">
-									<div class="male"></div>
-									<div class="separator"></div>
 									<div class="female"></div>
+									<div class="separator"></div>
+									<div class="male"></div>
 									<div class="clear"></div>
 								</div>
 							</div>
@@ -120,9 +120,9 @@
 								<div class="upper big">Comment</div>
 								<div class="upper">t'appelles tu</div>
 								<div class="choice">
-									<div class="male"></div>
-									<div class="separator"></div>
 									<div class="female"></div>
+									<div class="separator"></div>
+									<div class="male"></div>
 								</div>
 							</div>
 							<div class="text">

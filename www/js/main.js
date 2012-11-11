@@ -9,12 +9,24 @@ $(window).resize(function(){
 		    "margin-top": function(){
 		    	return ($(window).height()  - $(this).height())/2- 103;
 		    },
-		})
+		});
+
+		$('.thirdStep > .content').css({
+		    "margin-top": function(){
+		    	return ($(window).height()  - $(this).height()-103)/2;
+		    },
+		});
+
+		$(".thirdStep #final #postit .content").css(
+			'padding-top',
+			($(".thirdStep #final #postit").height() - $(".thirdStep #final #postit .content").height())/2
+		);
 
 		var postit = $(".thirdStep #final #postit");
 		var fbSharing = $(".thirdStep #final .fbSharing");
 		var next = $(".thirdStep #final .next");
 		postit.css('left', $(window).width()/2-postit.width()/2);
+
 
 		var position = postit.position();
 		fbSharing.css('left', position.left-33);
@@ -114,6 +126,7 @@ function rightClick(){
 
 
 function sexeChoice(sexe) {
+	$(window).resize();
 	var time = 1000;
 	$(document).data('sexe', sexe);
 	$('.thirdStep #first').transition({opacity : 0}, time, function(){
@@ -155,6 +168,7 @@ function validName(){
 
 
 function nextPhrase() {
+	$(window).resize();
 	$(".thirdStep #final").transition({opacity:0}, function(){
 		validName();
 	}, 1000);
@@ -164,7 +178,6 @@ function nextPhrase() {
 function drawFinal(datas)
 {
 	var time = 1000;
-	console.log(datas);
 	var prenom = datas.prenom;
 	var phrase = datas.phrase;
 	var color = datas.color;
@@ -196,10 +209,6 @@ function drawFinal(datas)
 		$(".thirdStep #final").css({opacity:0}).show(0);
 		$(window).resize();
 
-		$(".thirdStep #final #postit .content").css(
-			'padding-top',
-			($(".thirdStep #final #postit").height() - $(".thirdStep #final #postit .content").height())/2
-		);
 		$(".thirdStep #final").transition({opacity : 1}, time);
 
 	});

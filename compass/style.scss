@@ -46,6 +46,10 @@ ol, ul {
     list-style: none outside none;
 }
 
+input{
+	outline-style: none;
+}
+
 html, body {
    	height: 100%;
 }
@@ -256,6 +260,7 @@ footer#homeFooter{
 }
 
 .thirdStep{
+	padding-top: 1px;
 	.ombre{
 		width: 554px;
 		height: 36px;
@@ -267,7 +272,6 @@ footer#homeFooter{
 	.content{
 		height: 400px;
 		width: 100%;
-		padding-top: 100px;
 		margin : 0 auto;
 	}
 	.text{
