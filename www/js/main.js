@@ -29,6 +29,7 @@ function initElements(){
 }
 
 function initEvents(){
+
 	if($(document).data('encodedData')) {
 		$('#content .secondStep, #content .thirdStep .content *').hide();
 		$('#content .thirdStep').addClass('lightBg');
@@ -36,8 +37,10 @@ function initEvents(){
 		openHome(function(){validName()});
 
 	} else {
-		$(window).oneTime('1s', openHome);
+		$(".firstStep .separator").transition({width : "100%"}, 5000, openHome);
 	}
+
+
 	$('header#homeHeader .imgLogo').click(function(){$(document).attr('location', '/');});
 	$('#leftBlock .beginBt').click(leftClick);
 	$('#rightBlock .beginBt').click(rightClick);

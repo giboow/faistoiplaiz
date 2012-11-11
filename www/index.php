@@ -34,7 +34,7 @@
 					<div class="firstStep">
 						<div class="separator"></div>
 						<div class="text">Besoin d'&ecirc;tre compliment&eacute;?</div>
-						<div class="text">Ou besoin de vannes qui tues pour tes potes?</div>
+						<div class="text">Ou besoin de vanner tes potes?</div>
 					</div>
 				</div>
 			</header>
