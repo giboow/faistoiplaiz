@@ -6,7 +6,7 @@ $white : #FFFFFF;
 $black : #000000;
 $lightGrey : #F6F6F6;
 $grey : #D3D3D3;
-$lightDark :#4D4D4D;
+$lightDark :#242727;
 $dark : #1C1C1C;
 
 
@@ -401,6 +401,7 @@ footer#homeFooter{
 			background-repeat: no-repeat;
 			font-size: 35px;
 			text-transform: uppercase;
+			color: $white;
 			.content {
 				.text{
 					width: 100%;
@@ -451,6 +452,16 @@ footer#homeFooter{
 			height: 64px;
 		}
 		#postit.jaune{
+			color: $black;
+			.text{
+				.logoSeparator{
+					border-color: $black;
+				}
+			}
+
+			.separatorBottom {
+					border-color: $black;
+			}
 			background-image : url('/img/affiches/jaune.png');
 			.logo {
 				background-image : url('/img/logo/logovert.png');
@@ -485,6 +496,16 @@ footer#homeFooter{
 			background-image : url('/img/affiches/noir.png');
 		}
  		#postit.orange{
+ 			color: $black;
+			.text{
+				.logoSeparator{
+					border-color: $black;
+				}
+			}
+
+			.separatorBottom {
+					border-color: $black;
+			}
 			background-image : url('/img/affiches/orange.png');
 			.logo {
 				background-image : url('/img/logo/logoblanc.png');
@@ -494,6 +515,7 @@ footer#homeFooter{
 			}
 		}
 		#postit.rose{
+
 			background-image : url('/img/affiches/rose.png');
 			.logo {
 				background-image : url('/img/logo/logojaune.png');
@@ -512,6 +534,16 @@ footer#homeFooter{
 			}
 		}
 		#postit.vert{
+			color: $black;
+			.text{
+				.logoSeparator{
+					border-color: $black;
+				}
+			}
+
+			.separatorBottom {
+					border-color: $black;
+			}
 			background-image : url('/img/affiches/vert.png');
 			.logo {
 				background-image : url('/img/logo/logoblanc.png');

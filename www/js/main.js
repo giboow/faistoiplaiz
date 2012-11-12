@@ -1,4 +1,5 @@
 $(document).ready(function(){
+
 	initElements();
 	initEvents();
 });
@@ -7,7 +8,12 @@ $(window).resize(function(){
 
 		$('.secondStep .contentBlock').css({
 		    "margin-top": function(){
-		    	return ($(window).height()  - $(this).height())/2- 103;
+		    	var top = ($(window).height()  - $(this).height())/2- 103;
+		    	if (top <= 103) {
+		    		return $(this).top;
+		    	} else {
+		    		return top;
+		    	}
 		    },
 		});
 
@@ -131,6 +137,13 @@ function sexeChoice(sexe) {
 	$(document).data('sexe', sexe);
 	$('.thirdStep #first').transition({opacity : 0}, time, function(){
 		$(this).hide(0);
+		if ($(document).data('insulte')) {
+			$('.thirdStep #second .title').html('<div class="upper big">Qui</div><div class="upper">veux tu vanner</div>');
+			$('.thirdStep #second input[name=prenom]').attr('placeholder', 'entre son prenom');
+		} else {
+			$('.thirdStep #second .title').html('<div class="upper big">Comment</div><div class="upper">t\'appelles tu</div>');
+			$('.thirdStep #second input[name=prenom]').attr('placeholder', 'entre ton prenom');
+		}
 		$('.thirdStep #second').show(0).transition({opacity : 1}, time, function(){
 			$('.thirdStep #second form input[name=prenom]').focus();
 		});
@@ -148,6 +161,10 @@ function validName(){
 		datas = encoded;
 		$(document).removeData('encodedData')
 	} else {
+		if(!prenom) {
+			alert('Entre un prenom!');
+			return false;
+		}
 		datas.prenom = prenom,
 		datas.sexe = $(document).data('sexe');
 		datas.insulte = $(document).data('insulte');
