@@ -30,6 +30,36 @@ $lightBlue : #15B3F1;
 }
 }
 
+//FONTS
+@font-face {
+	font-family: 'Rockwell';
+	src: url('font/Rockwell.ttf');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Rockwell-Light';
+	src: url('font/Rockwell-Light.ttf');
+	font-weight: normal;
+	font-style: light;
+}
+
+@font-face {
+	font-family: 'Rockwell';
+	src: url('font/Rockwell-Extra-Bold.ttf');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Rockwell-Negrito';
+	src: url('font/Rockwell-Negrito.ttf');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
 // CSS
 
 * { margin:0; padding:0; }
@@ -60,7 +90,7 @@ body {
    	overflow: hidden;
    	min-width: 800px;
    	min-height: 600px;
-   	font-family: arial;
+   	font-family: Rockwell, arial, sans-serif;
 }
 
 a, a:visited {
@@ -274,6 +304,7 @@ footer#homeFooter{
 		height: 400px;
 		width: 100%;
 		margin : 0 auto;
+		font-family: Rockwell, arial, san-serif;
 	}
 	.text{
 		margin: 0 auto;
