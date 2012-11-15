@@ -51,7 +51,6 @@ function getPhrases ($bdd, $sexe=null, $insulte=null){
 			$sql .= " sexe='".$sexe."'";
 		}
 	}
-	echo $sql;
 	$select =  $bdd->query($sql);
 	$datas = $select->setFetchMode(PDO::FETCH_ASSOC);
 	return $select->fetchAll();
@@ -60,9 +59,7 @@ function getPhrases ($bdd, $sexe=null, $insulte=null){
 function updatePhrase($bdd, $id, $phrase)
 {
 	$sql = "UPDATE phrases set phrase='".addslashes(utf8_decode($phrase))."' WHERE id=".$id;
-	echo $sql;
 	$select =  $bdd->exec($sql);
-	var_dump($select);
 }
 
 function deletePhrase($bdd, $id) {
