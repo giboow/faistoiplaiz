@@ -311,9 +311,10 @@ footer#homeFooter{
 		font-size: 20px;
 		width: 320px;
 		text-align: center;
+		font-size: 40px;
 		.separator {
-			width: 120px;
-			margin-top: 10px;
+			width: 135px;
+			margin-top: 20px;
 			border-top: solid 3px;
 		}
 		.rightSeparator{
@@ -341,7 +342,7 @@ footer#homeFooter{
 		}
 		@extend .step3;
 		.choice {
-			height: 160px;
+			height: 140px;
 			width: 275px;
 			margin: 0 auto;
 			.imgGender{
@@ -350,7 +351,7 @@ footer#homeFooter{
 				background-repeat:no-repeat;
 				cursor: pointer;
 				float: left;
-				margin: 20px;
+				margin: 0 20px;
 			}
 			.male{
 				@extend .imgGender;
@@ -369,7 +370,7 @@ footer#homeFooter{
 			.separator{
 				margin: 20px 5px;
 				//width: 3px;
-				height: 130px;
+				height: 90px;
 				border-left: solid 3px;
 				float: left;
 			}
