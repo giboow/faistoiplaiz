@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<?php
-	include_once 'config/functions.php';
+	include_once __DIR__.'/config/functions.php';
 	?>
 	<head>
 		<title>Fais toi plaiz</title>

@@ -1,5 +1,5 @@
 <?php
-include_once 'config/app.config.php';
+include_once  __DIR__.'/app.config.php';
 
 function getPhrase($bdd, $sexe='M', $insulte=true, $id=null) {
 	if ($insulte) {
@@ -34,4 +34,46 @@ function decodeData($datas) {
 
 	$datasDecode = json_decode(base64_decode($datas));
 	return $datasDecode;
+}
+
+
+function getPhrases ($bdd, $sexe=null, $insulte=null){
+	$sql = "SELECT * FROM phrases";
+	if ($sexe || $insulte) {
+		$sql .= " WHERE";
+		if ($insulte !== null) {
+			$insulte = (bool)$insulte;
+			$sql .= " insulte='".$insulte."'";
+		}
+		if ($sexe !== null) {
+			if ($insulte !== null)
+				$sql.=" AND";
+			$sql .= " sexe='".$sexe."'";
+		}
+	}
+	echo $sql;
+	$select =  $bdd->query($sql);
+	$datas = $select->setFetchMode(PDO::FETCH_ASSOC);
+	return $select->fetchAll();
+}
+
+function updatePhrase($bdd, $id, $phrase)
+{
+	$sql = "UPDATE phrases set phrase='".addslashes(utf8_decode($phrase))."' WHERE id=".$id;
+	echo $sql;
+	$select =  $bdd->exec($sql);
+	var_dump($select);
+}
+
+function deletePhrase($bdd, $id) {
+	$sql = "DELETE FROM phrases WHERE id=".$id;
+	$select =  $bdd->exec($sql);
+}
+
+function addPhrase($bdd, $datas) {
+	$sexe = $datas['sexe'];
+	$insulte = (isset($data['insulte'])?1:0);
+	$phrase = addslashes(utf8_decode($datas['phrase']));
+	$sql = "INSERT INTO `phrases` (`sexe`, `insulte`, `phrase`) VALUES ('".$sexe."', '".$insulte."', '".$phrase."');";
+	$bdd->exec($sql);
 }
