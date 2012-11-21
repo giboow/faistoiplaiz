@@ -426,6 +426,7 @@ footer#homeFooter{
 			height: 39px;
 			z-index: 1;
 			position: absolute;
+			cursor: pointer;
 		}
 		#postit{
 			position: absolute;
@@ -486,6 +487,7 @@ footer#homeFooter{
 			background-repeat: no-repeat;
 			width: 75px;
 			height: 64px;
+			cursor: pointer;
 		}
 		#postit.jaune{
 			color: $black;

@@ -455,8 +455,9 @@ footer#homeFooter #team {
   height: 39px;
   z-index: 1;
   position: absolute;
+  cursor: pointer;
 }
-/* line 430, ../../compass/style.scss */
+/* line 431, ../../compass/style.scss */
 .thirdStep #final #postit {
   position: absolute;
   z-index: 2;
@@ -468,195 +469,196 @@ footer#homeFooter #team {
   text-transform: uppercase;
   color: white;
 }
-/* line 440, ../../compass/style.scss */
+/* line 441, ../../compass/style.scss */
 .thirdStep #final #postit .content {
   width: 100%;
   height: auto;
   padding: 0;
 }
-/* line 441, ../../compass/style.scss */
+/* line 442, ../../compass/style.scss */
 .thirdStep #final #postit .content .text {
   width: 100%;
 }
-/* line 443, ../../compass/style.scss */
+/* line 444, ../../compass/style.scss */
 .thirdStep #final #postit .content .text .logoSeparator {
   width: 90px;
   border-top: solid 3px white;
   margin-top: 13px;
 }
-/* line 448, ../../compass/style.scss */
+/* line 449, ../../compass/style.scss */
 .thirdStep #final #postit .content .text .logoSeparator.left {
   float: left;
   margin-left: 10px;
 }
-/* line 452, ../../compass/style.scss */
+/* line 453, ../../compass/style.scss */
 .thirdStep #final #postit .content .text .logoSeparator.right {
   float: right;
   margin-right: 10px;
 }
-/* line 456, ../../compass/style.scss */
+/* line 457, ../../compass/style.scss */
 .thirdStep #final #postit .content .text .logo {
   width: 82px;
   height: 27px;
   margin: 0 auto;
 }
-/* line 465, ../../compass/style.scss */
+/* line 466, ../../compass/style.scss */
 .thirdStep #final #postit .content .phrase {
   padding: 5px 27px 18px 27px;
   font-size: 33px;
 }
-/* line 471, ../../compass/style.scss */
+/* line 472, ../../compass/style.scss */
 .thirdStep #final #postit .content .separatorBottom {
   border-top: solid 3px white;
   width: 289px;
   margin-left: 10px;
 }
-/* line 479, ../../compass/style.scss */
+/* line 480, ../../compass/style.scss */
 .thirdStep #final .ombre {
   height: 410px;
   background-position: bottom;
 }
-/* line 483, ../../compass/style.scss */
+/* line 484, ../../compass/style.scss */
 .thirdStep #final .next {
   position: absolute;
   background-image: url("/img/next.png");
   background-repeat: no-repeat;
   width: 75px;
   height: 64px;
+  cursor: pointer;
 }
-/* line 490, ../../compass/style.scss */
+/* line 492, ../../compass/style.scss */
 .thirdStep #final #postit.jaune {
   color: black;
   background-image: url("/img/affiches/jaune.png");
 }
-/* line 493, ../../compass/style.scss */
+/* line 495, ../../compass/style.scss */
 .thirdStep #final #postit.jaune .text .logoSeparator {
   border-color: black;
 }
-/* line 498, ../../compass/style.scss */
+/* line 500, ../../compass/style.scss */
 .thirdStep #final #postit.jaune .separatorBottom {
   border-color: black;
 }
-/* line 502, ../../compass/style.scss */
+/* line 504, ../../compass/style.scss */
 .thirdStep #final #postit.jaune .logo {
   background-image: url("/img/logo/logovert.png");
 }
-/* line 505, ../../compass/style.scss */
+/* line 507, ../../compass/style.scss */
 .thirdStep #final #postit.jaune .prenom {
   color: #6aaf39;
 }
-/* line 510, ../../compass/style.scss */
+/* line 512, ../../compass/style.scss */
 .thirdStep #final #postit.bleu {
   background-image: url("/img/affiches/bleu.png");
 }
-/* line 512, ../../compass/style.scss */
+/* line 514, ../../compass/style.scss */
 .thirdStep #final #postit.bleu .logo {
   background-image: url("/img/logo/logovertfluo.png");
 }
-/* line 515, ../../compass/style.scss */
+/* line 517, ../../compass/style.scss */
 .thirdStep #final #postit.bleu .prenom {
   color: #37ec8a;
 }
-/* line 519, ../../compass/style.scss */
+/* line 521, ../../compass/style.scss */
 .thirdStep #final #postit.bleupastel {
   background-image: url("/img/affiches/bleupastel.png");
 }
-/* line 521, ../../compass/style.scss */
+/* line 523, ../../compass/style.scss */
 .thirdStep #final #postit.bleupastel .logo {
   background-image: url("/img/logo/logojaune.png");
 }
-/* line 524, ../../compass/style.scss */
+/* line 526, ../../compass/style.scss */
 .thirdStep #final #postit.bleupastel .prenom {
   color: #dfe930;
 }
-/* line 528, ../../compass/style.scss */
+/* line 530, ../../compass/style.scss */
 .thirdStep #final #postit.gris {
   background-image: url("/img/affiches/gris.png");
 }
-/* line 531, ../../compass/style.scss */
+/* line 533, ../../compass/style.scss */
 .thirdStep #final #postit.noir {
   background-image: url("/img/affiches/noir.png");
 }
-/* line 534, ../../compass/style.scss */
+/* line 536, ../../compass/style.scss */
 .thirdStep #final #postit.orange {
   color: black;
   background-image: url("/img/affiches/orange.png");
 }
-/* line 537, ../../compass/style.scss */
+/* line 539, ../../compass/style.scss */
 .thirdStep #final #postit.orange .text .logoSeparator {
   border-color: black;
 }
-/* line 542, ../../compass/style.scss */
+/* line 544, ../../compass/style.scss */
 .thirdStep #final #postit.orange .separatorBottom {
   border-color: black;
 }
-/* line 546, ../../compass/style.scss */
+/* line 548, ../../compass/style.scss */
 .thirdStep #final #postit.orange .logo {
   background-image: url("/img/logo/logoblanc.png");
 }
-/* line 549, ../../compass/style.scss */
+/* line 551, ../../compass/style.scss */
 .thirdStep #final #postit.orange .prenom {
   color: white;
 }
-/* line 553, ../../compass/style.scss */
+/* line 555, ../../compass/style.scss */
 .thirdStep #final #postit.rose {
   background-image: url("/img/affiches/rose.png");
 }
-/* line 556, ../../compass/style.scss */
+/* line 558, ../../compass/style.scss */
 .thirdStep #final #postit.rose .logo {
   background-image: url("/img/logo/logojaune.png");
 }
-/* line 559, ../../compass/style.scss */
+/* line 561, ../../compass/style.scss */
 .thirdStep #final #postit.rose .prenom {
   color: #dfe930;
 }
-/* line 563, ../../compass/style.scss */
+/* line 565, ../../compass/style.scss */
 .thirdStep #final #postit.rouge {
   background-image: url("/img/affiches/rouge.png");
 }
-/* line 565, ../../compass/style.scss */
+/* line 567, ../../compass/style.scss */
 .thirdStep #final #postit.rouge .logo {
   background-image: url("/img/logo/logojaune.png");
 }
-/* line 568, ../../compass/style.scss */
+/* line 570, ../../compass/style.scss */
 .thirdStep #final #postit.rouge .prenom {
   color: #dfe930;
 }
-/* line 572, ../../compass/style.scss */
+/* line 574, ../../compass/style.scss */
 .thirdStep #final #postit.vert {
   color: black;
   background-image: url("/img/affiches/vert.png");
 }
-/* line 575, ../../compass/style.scss */
+/* line 577, ../../compass/style.scss */
 .thirdStep #final #postit.vert .text .logoSeparator {
   border-color: black;
 }
-/* line 580, ../../compass/style.scss */
+/* line 582, ../../compass/style.scss */
 .thirdStep #final #postit.vert .separatorBottom {
   border-color: black;
 }
-/* line 584, ../../compass/style.scss */
+/* line 586, ../../compass/style.scss */
 .thirdStep #final #postit.vert .logo {
   background-image: url("/img/logo/logoblanc.png");
 }
-/* line 587, ../../compass/style.scss */
+/* line 589, ../../compass/style.scss */
 .thirdStep #final #postit.vert .prenom {
   color: white;
 }
-/* line 591, ../../compass/style.scss */
+/* line 593, ../../compass/style.scss */
 .thirdStep #final #postit.violet {
   background-image: url("/img/affiches/violet.png");
 }
-/* line 593, ../../compass/style.scss */
+/* line 595, ../../compass/style.scss */
 .thirdStep #final #postit.violet .logo {
   background-image: url("/img/logo/logojaune.png");
 }
-/* line 596, ../../compass/style.scss */
+/* line 598, ../../compass/style.scss */
 .thirdStep #final #postit.violet .prenom {
   color: #dfe930;
 }
 
-/* line 603, ../../compass/style.scss */
+/* line 605, ../../compass/style.scss */
 .lightBg {
   background-image: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 100, color-stop(0%, #f6f6f6), color-stop(100%, #d3d3d3));
   background-image: -webkit-radial-gradient(circle contain, #f6f6f6, #d3d3d3);
@@ -665,20 +667,20 @@ footer#homeFooter #team {
   background-image: radial-gradient(circle contain, #f6f6f6, #d3d3d3);
   color: black;
 }
-/* line 606, ../../compass/style.scss */
+/* line 608, ../../compass/style.scss */
 .lightBg input[type=submit] {
   color: black;
 }
-/* line 610, ../../compass/style.scss */
+/* line 612, ../../compass/style.scss */
 .lightBg #second .title {
   font-size: 48px;
 }
-/* line 612, ../../compass/style.scss */
+/* line 614, ../../compass/style.scss */
 .lightBg #second .title .big {
   font-size: 68px;
 }
 
-/* line 619, ../../compass/style.scss */
+/* line 621, ../../compass/style.scss */
 .darkBg {
   background-image: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 100, color-stop(0%, #242727), color-stop(100%, #1c1c1c));
   background-image: -webkit-radial-gradient(circle contain, #242727, #1c1c1c);
@@ -687,15 +689,15 @@ footer#homeFooter #team {
   background-image: radial-gradient(circle contain, #242727, #1c1c1c);
   color: white;
 }
-/* line 622, ../../compass/style.scss */
+/* line 624, ../../compass/style.scss */
 .darkBg input[type=submit] {
   color: white;
 }
-/* line 627, ../../compass/style.scss */
+/* line 629, ../../compass/style.scss */
 .darkBg #second .form input[type=text] {
   color: white;
 }
-/* line 633, ../../compass/style.scss */
+/* line 635, ../../compass/style.scss */
 .darkBg #final .next {
   background-image: url("/img/next-blanc.png");
 }
