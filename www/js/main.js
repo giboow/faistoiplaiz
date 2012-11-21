@@ -138,7 +138,7 @@ function sexeChoice(sexe) {
 	$('.thirdStep #first').transition({opacity : 0}, time, function(){
 		$(this).hide(0);
 		if ($(document).data('insulte')) {
-			$('.thirdStep #second .title').html('<div class="upper big">Qui</div><div class="upper">veux tu vanner</div>');
+			$('.thirdStep #second .title').html('<div class="upper big">Qui veux-tu</div><div class="upper">vanner</div>');
 			$('.thirdStep #second input[name=prenom]').attr('placeholder', 'entre son prenom');
 		} else {
 			$('.thirdStep #second .title').html('<div class="upper big">Comment</div><div class="upper">t\'appelles tu</div>');

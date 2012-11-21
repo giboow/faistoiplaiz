@@ -46,7 +46,7 @@ $lightBlue : #15B3F1;
 }
 
 @font-face {
-	font-family: 'Rockwell';
+	font-family: 'Rockwell-Extra-Bold';
 	src: url('font/Rockwell-Extra-Bold.ttf');
 	font-weight: bold;
 	font-style: normal;
@@ -135,6 +135,10 @@ header#homeHeader{
 				width: 350px;
 				border-top: solid 2px $white;
 			}
+			.text {
+				font-size : 35px;
+				font-family: Rockwell-Light, arial, sans-serif;
+			}
 		}
 	}
 }
@@ -190,13 +194,14 @@ footer#homeFooter{
 		margin: 0 auto;
 		font-size: 40px;
 		.first {
+			font-size: 46px;
 		}
 		.middle{
 			font-size: 30px;
 			width: 350px;
 			text-align: center;
 			.separator {
-				width: 100px;
+				width: 110px;
 				margin-top: 20px;
 
 				border-top: solid 3px;
@@ -218,32 +223,23 @@ footer#homeFooter{
 	}
 	.subTitle{
 		width: 350px;
-		margin: 20px auto;
-		font-size: 14px;
+		margin: 40px auto;
+		font-size: 20px;
+		text-transform: none;
+		font-family: Rockwell-Light, arial, sans-serif;
+
 	}
 	.beginBt{
+		text-transform: uppercase;
 		margin: 20px auto;
-		font-size: 25px;
+		font-size: 30px;
 		color: $lightBlue;
 		cursor: pointer;
+		font-family: Rockwell, arial, sans-serif;
 	}
 }
 
-.lightBg {
-	@include background-image(radial-gradient(color-stops($lightGrey,$grey), circle contain));
-	color: $black;
-	input[type=submit] {
-		color: $black;
-	}
-}
 
-.darkBg{
-	@include background-image(radial-gradient(color-stops($lightDark, $dark), circle contain));
-	color: $white;
-	input[type=submit] {
-		color: $white;
-	}
-}
 
 #leftBlock{
 	float: left;
@@ -333,10 +329,17 @@ footer#homeFooter{
 		margin: 40px auto;
 		text-align: center;
 		.title{
-			font-size: 35px;
+			margin-bottom: 5px;
+			font-size: 75px;
+			.upper{
+				line-height: 56px;
+			}
 		}
 	}
 	#first{
+		.title{
+			font-size: 35px;
+		}
 		.ombre {
 			margin: 0 auto;
 		}
@@ -381,7 +384,7 @@ footer#homeFooter{
 		opacity: 0;
 		display: none;
 		.big {
-			font-size: 45px;
+			font-size: 50px;
 		}
 		.form{
 			input[type=text]{
@@ -390,10 +393,10 @@ footer#homeFooter{
 			    height: 70px;
 			    width: 100%;
 			    padding: 10px 5px;
-			    font: bold 2em 'lucida sans', 'trebuchet MS', 'Tahoma';
+			    font: bold 2em arial;
 			    border: 0;
 			    background: transparent;
-			    color: $lightBlue;
+			    color: $black;
 			    text-align: center;
 			    text-transform: uppercase;
 			    @include input-placeholder($grey);
@@ -460,7 +463,8 @@ footer#homeFooter{
 				height: auto;
 				padding: 0;
 				.phrase {
-					padding: 20px 10px 30px 10px;
+					padding: 5px 27px 18px 27px;
+					font-size: 33px;
 					.prenom {
 					}
 				}
@@ -592,6 +596,42 @@ footer#homeFooter{
 			.prenom {
 				color: $jaune;
 			}
+		}
+	}
+}
+
+.lightBg {
+	@include background-image(radial-gradient(color-stops($lightGrey,$grey), circle contain));
+	color: $black;
+	input[type=submit] {
+		color: $black;
+	}
+	#second {
+		.title{
+			font-size: 48px;
+			.big{
+				font-size: 68px;
+			}
+		}
+	}
+}
+
+.darkBg{
+	@include background-image(radial-gradient(color-stops($lightDark, $dark), circle contain));
+	color: $white;
+	input[type=submit] {
+		color: $white;
+	}
+	#second {
+		.form {
+			input[type=text] {
+				color: $white;
+			}
+		}
+	}
+	#final{
+		.next{
+			background-image : url('/img/next-blanc.png');
 		}
 	}
 }
