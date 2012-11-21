@@ -68,15 +68,26 @@ function getPhrases ($bdd, $sexe=null, $insulte=null){
 	return $select->fetchAll();
 }
 
+function clearCaches()
+{
+	global $cache;
+	$cache->clear('M0');
+	$cache->clear('M1');
+	$cache->clear('F0');
+	$cache->clear('F1');
+}
+
 function updatePhrase($bdd, $id, $phrase)
 {
 	$sql = "UPDATE phrases set phrase='".addslashes(utf8_decode($phrase))."' WHERE id=".$id;
 	$select =  $bdd->exec($sql);
+	clearCaches();
 }
 
 function deletePhrase($bdd, $id) {
 	$sql = "DELETE FROM phrases WHERE id=".$id;
 	$select =  $bdd->exec($sql);
+	clearCaches();
 }
 
 function addPhrase($bdd, $datas) {
@@ -85,6 +96,7 @@ function addPhrase($bdd, $datas) {
 	$phrase = addslashes(utf8_decode($datas['phrase']));
 	$sql = "INSERT INTO `phrases` (`sexe`, `insulte`, `phrase`) VALUES ('".$sexe."', '".$insulte."', '".$phrase."');";
 	$bdd->exec($sql);
+	clearCaches();
 }
 
 function write_multiline_text($image, $font_size, $color, $font, $line_heigh, $text, $start_x, $start_y, $max_width, $write=true, $colored = array()) {

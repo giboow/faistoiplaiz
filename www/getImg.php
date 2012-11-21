@@ -15,14 +15,16 @@ $font = './css/font/Rockwell.ttf';
 
 $text = "This is a very ";
 $text .= "long long long long long long long long long long long long long long long long ";
-//$text .= "long long long long long long long long long long long long long long long long ";
-$text .= " line of text";
+$text .= "long long long long long long long long long long long";
 $text .= " {prenom}";
+$text .= " line of text";
 
 $text = strtoupper($text);
-$colored = array('{PRENOM}' => array('color' => $white, 'value' => strtoupper($_GET['prenom'])));
+$prenom = $_GET['prenom'];
+$prenom = str_split($prenom, 18)[0];
+$colored = array('{PRENOM}' => array('color' => $white, 'value' => strtoupper($prenom)));
 $y = write_multiline_text($im, 20, $black, $font, 2, $text, 0, 0, 298, false, $colored);
-$y1 = $y + 90;
+$y1 = $y + 100;
 $yTop = (398-$y1)/2;
 
 $logo = imagecreatefrompng('img/logo/logoblanc.png');
