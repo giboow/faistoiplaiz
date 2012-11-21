@@ -1,38 +1,5 @@
 <?php
-
-function write_multiline_text($image, $font_size, $color, $font, $line_heigh, $text, $start_x, $start_y, $max_width) {
-    //split the string
-    //build new string word for word
-    //check everytime you add a word if string still fits
-    //otherwise, remove last word, post current string and start fresh on a new line
-    $words = explode(" ", $text);
-    $string = "";
-    $tmp_string = "";
-
-    for($i = 0; $i < count($words); $i++) {
-        $tmp_string .= $words[$i]." ";
-
-        //check size of string
-        $dim = imagettfbbox($font_size, 0, $font, $tmp_string);
-
-        if($dim[4] < ($max_width - $start_x)) {
-            $string = $tmp_string;
-            $curr_width = $dim[4];
-        } else {
-            $i--;
-            $tmp_string = "";
-            $start_xx = $start_x + round(($max_width - $curr_width - $start_x) / 2);
-            imagettftext($image, $font_size, 0, $start_xx, $start_y, $color, $font, $string);
-
-            $string = "";
-            $start_y += abs($dim[5]) + $line_heigh;
-            $curr_width = 0;
-        }
-    }
-
-    $start_xx = $start_x + round(($max_width - $dim[4] - $start_x) / 2);
-    imagettftext($image, $font_size, 0, $start_xx, $start_y, $color, $font, $string);
-}
+include __DIR__.'/config/functions.php';
 
 $im = imagecreatefrompng( 'img/affiches/bleu.png');
 
@@ -42,18 +9,37 @@ $white = imagecolorallocate($im, 255, 255, 255);
 
 // Set the background to be white
 
-$logo = imagecreatefrompng('img/logo/logoblanc.png');
-imagecopy($im, $logo , 113, 30, 0, 0, 82, 27);
+
 // Path to our font file
 $font = './css/font/Rockwell.ttf';
 
 $text = "This is a very ";
 $text .= "long long long long long long long long long long long long long long long long ";
-$text .= "long long long long long long long long long long long long long long long long ";
-$text .= "line of text";
+//$text .= "long long long long long long long long long long long long long long long long ";
+$text .= " line of text";
+$text .= " {prenom}";
 
 $text = strtoupper($text);
-write_multiline_text($im, 20, $black, $font, 2, $text, 10, 100, 298);
+$colored = array('{PRENOM}' => array('color' => $white, 'value' => strtoupper($_GET['prenom'])));
+$y = write_multiline_text($im, 20, $black, $font, 2, $text, 0, 0, 298, false, $colored);
+$y1 = $y + 90;
+$yTop = (398-$y1)/2;
+
+$logo = imagecreatefrompng('img/logo/logoblanc.png');
+imageline ( $im, 20 , $yTop+15 , 100 , $yTop+15 , $black);
+imageline ( $im, 20 , $yTop+16 , 100 , $yTop+16 , $black);
+imagecopy($im, $logo , 113, $yTop, 0, 0, 82, 27);
+imageline ( $im, 208 , $yTop+15 , 288  , $yTop+15 , $black);
+imageline ( $im, 208 , $yTop+16 , 288 , $yTop+16 , $black);
+
+
+$y2 = $yTop + 60;
+
+$y = write_multiline_text($im, 20, $black, $font, 2, $text, 10, $y2, 298, true, $colored);
+
+$y= $y+20;
+imageline($im, 20, $y, 288, $y, $black);
+imageline($im, 20, $y+1, 288, $y+1, $black);
 
 // Output to browser
 header('Content-Type: image/png');
