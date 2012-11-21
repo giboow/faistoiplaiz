@@ -14,7 +14,7 @@ $white = imagecolorallocate($im, 255, 255, 255);
 $font = './css/font/Rockwell.ttf';
 
 $text = "This is a very ";
-$text .= "long long long long long long long long long long long long long long long long ";
+$text .= "long long long long long long long long long long long";
 $text .= "long long long long long long long long long long long";
 $text .= " {prenom}";
 $text .= " line of text";
@@ -23,7 +23,7 @@ $text = strtoupper($text);
 $prenom = $_GET['prenom'];
 $prenom = str_split($prenom, 18)[0];
 $colored = array('{PRENOM}' => array('color' => $white, 'value' => strtoupper($prenom)));
-$y = write_multiline_text($im, 20, $black, $font, 2, $text, 0, 0, 298, false, $colored);
+$y = write_multiline_text($im, 20, $black, $font, 8, $text, 0, 0, 298, false, $colored);
 $y1 = $y + 100;
 $yTop = (398-$y1)/2;
 
@@ -37,9 +37,9 @@ imageline ( $im, 208 , $yTop+16 , 288 , $yTop+16 , $black);
 
 $y2 = $yTop + 60;
 
-$y = write_multiline_text($im, 20, $black, $font, 2, $text, 10, $y2, 298, true, $colored);
+$y = write_multiline_text($im, 20, $black, $font, 8, $text, 10, $y2, 298, true, $colored);
 
-$y= $y+20;
+$y= $y+15;
 imageline($im, 20, $y, 288, $y, $black);
 imageline($im, 20, $y+1, 288, $y+1, $black);
 
