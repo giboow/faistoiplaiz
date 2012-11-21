@@ -1,23 +1,35 @@
 <?php
 include_once  __DIR__.'/app.config.php';
+include_once __DIR__ .'/Cache.php';
+$cache = new Cache(__DIR__.'/../cache/');
 
 function getPhrase($bdd, $sexe='M', $insulte=true, $id=null) {
+	global $cache;
 	if ($insulte) {
 		$insulte = 1;
 	} else {
 		$insulte = 0;
 	}
-	$sql = 'SELECT * FROM phrases WHERE sexe="'.$sexe.'" AND insulte='.$insulte;
-	if ($id) {
-		$sql .= ' AND id='.$id;
-	} else {
-		$sql .= ' ORDER BY RAND()';
+	$insulte = 1;
+	$cacheName = $sexe.$insulte;
+	if(($entries = $cache->get($cacheName)) === false) {
+		$sql = 'SELECT * FROM phrases WHERE sexe="'.$sexe.'" AND insulte='.$insulte;
+		$select =  $bdd->query($sql);
+		$datas = $select->setFetchMode(PDO::FETCH_ASSOC);
+		$v = $select->fetchAll();
+		$entries = array();
+		foreach ($v as $d) {
+			$entries[$d['id']] = $d;
+		}
+		$cache->set($cacheName, $entries);
 	}
-	$sql .= ' LIMIT 1';
+	if ($id) {
+		if(isset($entries[$id])) {
+			return $entries[$id];
+		}
+	}
+	return $entries[array_rand($entries)];
 
-	$select =  $bdd->query($sql);
-	$datas = $select->setFetchMode(PDO::FETCH_ASSOC);
-	return $select->fetch();
 }
 
 function generateUrl($datas) {
@@ -76,10 +88,6 @@ function addPhrase($bdd, $datas) {
 }
 
 function write_multiline_text($image, $font_size, $color, $font, $line_heigh, $text, $start_x, $start_y, $max_width, $write=true, $colored = array()) {
-	//split the string
-	//build new string word for word
-	//check everytime you add a word if string still fits
-	//otherwise, remove last word, post current string and start fresh on a new line
 	$words = explode(" ", $text);
 	$string = "";
 	$tmp_string = array();
