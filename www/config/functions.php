@@ -31,8 +31,11 @@ function getPhrase($bdd, $sexe='M', $insulte=true, $id=null) {
 
 }
 
-function generateUrl($datas) {
-	$url = 'http://'.$_SERVER["HTTP_HOST"]."/?datas=".encodeData($datas);
+function generateUrl($datas, $script=null) {
+	$url = 'http://'.$_SERVER["HTTP_HOST"];
+	if($script)
+		$url .= "/".$script;
+	$url .= "/?datas=".encodeData($datas);
 	return $url;
 }
 

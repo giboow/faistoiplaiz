@@ -21,23 +21,29 @@ if (isset($inputDatas['id'])) {
 
 $datas = getPhrase($bdd, $sexe, $insulte, $id);
 $inputDatas['id'] = $datas['id'];
-if(!$id) {
-	$datas["fbUrl"] = generateUrl($inputDatas);
-}
-$datas["phrase"] = htmlentities(utf8_encode($datas["phrase"]), ENT_XHTML);
-
 
 $colors = array(
-	'jaune',
-	'bleu',
-	'bleupastel',
-	'orange',
-	'rose',
-	'rouge',
-	'vert',
-	'violet'
+		'jaune',
+		'bleu',
+		'bleupastel',
+		'orange',
+		'rose',
+		'rouge',
+		'vert',
+		'violet'
 );
 
 $datas["color"] = $colors[array_rand($colors)];
+
+$inputDatas['color'] = $datas["color"];
+
+
+if(!$id) {
+	$datas["fbUrl"] = generateUrl($inputDatas);
+}
+$datas['imgUrl'] = generateUrl($inputDatas, 'getImg.php');
+$datas["phrase"] = htmlentities(utf8_encode($datas["phrase"]), ENT_XHTML);
+
+
 
 echo json_encode($datas);

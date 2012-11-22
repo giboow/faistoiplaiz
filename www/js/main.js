@@ -200,10 +200,11 @@ function drawFinal(datas)
 	var color = datas.color;
 	var link = datas.fbUrl;
 
-	var finalStr = new String(phrase);
+	/*var finalStr = new String(phrase);
 	finalStr = finalStr.replace("{prenom}", '<span class="prenom">'+prenom+'</span>');
 	$(".thirdStep #final #postit .content .phrase").html(finalStr);
-	$(".thirdStep #final #postit").removeClass().addClass(color);
+	$(".thirdStep #final #postit").removeClass().addClass(color);*/
+	$(".thirdStep #final #postit").html('<img src="'+datas.imgUrl+'"></img>')
 
 	var fbSharing = $(".thirdStep #final .fbSharing");
 
