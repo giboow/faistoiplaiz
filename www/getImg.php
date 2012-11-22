@@ -21,11 +21,14 @@ $white = imagecolorallocate($im, 255, 255, 255);
 // Path to our font file
 $font = './css/font/Rockwell.ttf';
 $phrase = getPhrase($bdd, $datas->sexe, $datas->insulte, $datas->id);
-/*$text = "This is a very ";
-$text .= "long long long long long long long long long long long";
-$text .= "long long long long long long long long long long long";
-$text .= " {prenom}";
-$text .= " line of text";*/
+header('Cache-control: max-age='.(60*60*24*365));
+header('Expires: '.gmdate(DATE_RFC1123,time()+60*60*24*365));
+header('Last-Modified: '.date(DATE_RFC822,strtotime(" 1 day")));
+if (isset($_SERVER['HTTP_IF_MODIFIED_SINCE'])) {
+	header('HTTP/1.1 304 Not Modified');
+	die();
+}
+
 $text = $phrase["phrase"];
 $text = strtoupper($text);
 $prenom = $datas->prenom;
