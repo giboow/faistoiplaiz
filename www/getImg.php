@@ -1,6 +1,14 @@
 <?php
 include __DIR__.'/config/functions.php';
 
+if(!isset($_GET['datas'])) {
+	die;
+}
+$datas = decodeData($_GET['datas']);
+
+
+
+
 $im = imagecreatefrompng( 'img/affiches/bleu.png');
 
 
@@ -12,15 +20,15 @@ $white = imagecolorallocate($im, 255, 255, 255);
 
 // Path to our font file
 $font = './css/font/Rockwell.ttf';
-
-$text = "This is a very ";
+$phrase = getPhrase($bdd, $datas->sexe, $datas->insulte, $datas->id);
+/*$text = "This is a very ";
 $text .= "long long long long long long long long long long long";
 $text .= "long long long long long long long long long long long";
 $text .= " {prenom}";
-$text .= " line of text";
-
+$text .= " line of text";*/
+$text = $phrase["phrase"];
 $text = strtoupper($text);
-$prenom = $_GET['prenom'];
+$prenom = $datas->prenom;
 $prenom = str_split($prenom, 18)[0];
 $colored = array('{PRENOM}' => array('color' => $white, 'value' => strtoupper($prenom)));
 $y = write_multiline_text($im, 20, $black, $font, 8, $text, 0, 0, 298, false, $colored);

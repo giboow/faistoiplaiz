@@ -10,7 +10,6 @@ function getPhrase($bdd, $sexe='M', $insulte=true, $id=null) {
 	} else {
 		$insulte = 0;
 	}
-	$insulte = 1;
 	$cacheName = $sexe.$insulte;
 	if(($entries = $cache->get($cacheName)) === false) {
 		$sql = 'SELECT * FROM phrases WHERE sexe="'.$sexe.'" AND insulte='.$insulte;
@@ -100,6 +99,13 @@ function addPhrase($bdd, $datas) {
 }
 
 function write_multiline_text($image, $font_size, $color, $font, $line_heigh, $text, $start_x, $start_y, $max_width, $write=true, $colored = array()) {
+	foreach ($colored as $k => $c) {
+		if (isset($c['value'])) {
+			if(!preg_match('#'.$k.' #', $text)) {
+				$text = str_replace($k, $k.' ', $text);
+			}
+		}
+	}
 	$words = explode(" ", $text);
 	$string = "";
 	$tmp_string = array();
