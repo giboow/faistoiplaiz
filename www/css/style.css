@@ -451,8 +451,8 @@ footer#homeFooter #team {
 .thirdStep #final .fbSharing {
   background-image: url("/img/fb.png");
   background-repeat: no-repeat;
-  width: 198px;
-  height: 39px;
+  width: 158px;
+  height: 29px;
   z-index: 1;
   position: absolute;
   cursor: pointer;

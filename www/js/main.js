@@ -35,7 +35,7 @@ $(window).resize(function(){
 
 
 		var position = postit.position();
-		fbSharing.css('left', position.left-33);
+		fbSharing.css('left', position.left-26);
 		fbSharing.css('top', position.top+postit.height()*2/3);
 
 		next.css('left', position.left+postit.width()+next.width()/2);
@@ -77,7 +77,7 @@ function initEvents(){
 		$(this).transition({ left : $(".thirdStep #final #postit").position().left - $(this).width()+5});
 	}, function(){
 		$(this).stop();
-		fbSharing.transition({ left : $(".thirdStep #final #postit").position().left-33});
+		fbSharing.transition({ left : $(".thirdStep #final #postit").position().left-26});
 	})
 
 	$(".thirdStep #final .next").click(nextPhrase)
