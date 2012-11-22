@@ -76,7 +76,7 @@ $colorConf['prenom'] = $colorPanel[$colorConf['prenom']];
 
 
 // Path to our font file
-$font = './css/font/Rockwell/ROCKB.ttf';
+$font = './css/font/Rockwell/ROCKB.TTF';
 $phrase = getPhrase($bdd, $datas->sexe, $datas->insulte, $datas->id);
 header('Cache-control: max-age='.(60*60*24*365));
 header('Expires: '.gmdate(DATE_RFC1123,time()+60*60*24*365));
