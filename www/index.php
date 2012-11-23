@@ -23,6 +23,17 @@
 				$(document).data('encodedData', jQuery.parseJSON('<?php echo  json_encode(decodeData($_GET['datas']));?>'));
 			<?php endif;?>
 		</script>
+
+		<div id="fb-root"></div>
+		<script>
+		(function(d, s, id) {
+		  var js, fjs = d.getElementsByTagName(s)[0];
+		  if (d.getElementById(id)) return;
+		  js = d.createElement(s); js.id = id;
+		  js.src = "//connect.facebook.net/fr_FR/all.js#xfbml=1&appId=375265012567825";
+		  fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));
+		</script>
 		<script type="text/javascript" src="/js/main.js"></script>
 	</head>
 	<body>
@@ -155,7 +166,7 @@
 				</div>
 			</div>
 			<footer id="homeFooter">
-				<div id="team">Concept et r&eacute;alisation : <a href="">3X3</a> & <a href="">AGDMAG</a></div>
+				<div class="fb-like" data-href="https://www.facebook.com/pages/AGD-MAG/137191636324924" data-send="false" data-layout="button_count" data-width="50" data-show-faces="false" data-font="arial"></div><div id="team">Concept et r&eacute;alisation : <a href="">3X3</a> & <a href="">AGDMAG</a></div>
 			</footer>
 		</div>
 	</body>

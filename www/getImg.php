@@ -76,8 +76,6 @@ $colorConf['prenom'] = $colorPanel[$colorConf['prenom']];
 
 
 // Path to our font file
-$font = './css/font/Rockwell/ROCKB.TTF';
-$phrase = getPhrase($bdd, $datas->sexe, $datas->insulte, $datas->id);
 header('Cache-control: max-age='.(60*60*24*365));
 header('Expires: '.gmdate(DATE_RFC1123,time()+60*60*24*365));
 header('Last-Modified: '.date(DATE_RFC822,strtotime(" 1 day")));
@@ -85,13 +83,17 @@ if (isset($_SERVER['HTTP_IF_MODIFIED_SINCE'])) {
 	header('HTTP/1.1 304 Not Modified');
 	die();
 }
+$font = './css/font/Rockwell/ROCKB.TTF';
+$id = $datas->id;
+$phrase = getPhrase($bdd, $datas->sexe, $datas->insulte, $id);
 
 $text = $phrase["phrase"];
+//var_dump($phrase);
 $text = mb_strtoupper($text);
 $prenom = $datas->prenom;
 $prenom = str_split($prenom, 18)[0];
 $colored = array('{PRENOM}' => array('color' => $colorConf['prenom'], 'value' => strtoupper($prenom)));
-$y = write_multiline_text($im, 25, $colorConf['color'], $font, 8, $text, 0, 0, 288, false, $colored);
+$y = write_multiline_text($im, 25, $colorConf['color'], $font, 10, $text, 0, 0, 278, false, $colored);
 $y1 = $y + 100;
 $yTop = (398-$y1)/2;
 
@@ -105,7 +107,7 @@ imageline ( $im, 208 , $yTop+16 , 288 , $yTop+16 , $colorConf['color']);
 
 $y2 = $yTop + 60;
 
-$y = write_multiline_text($im, 25, $colorConf['color'], $font, 8, $text, 10, $y2, 288, true, $colored);
+$y = write_multiline_text($im, 25, $colorConf['color'], $font, 10, $text, 15, $y2, 278, true, $colored);
 
 $y= $y+15;
 imageline($im, 20, $y, 288, $y, $colorConf['color']);

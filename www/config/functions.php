@@ -133,18 +133,30 @@ function write_multiline_text($image, $font_size, $color, $font, $line_heigh, $t
 			$string = implode(' ', $tmp_string);
 			$curr_width = $dim[4];
 		} else {
-			$i--;
-			$start_xx = $start_x + round(($max_width - $curr_width - $start_x) / 2);
+			if(count($tmp_string) > 1) {
+				$i--;
+				unset($tmp_string[count($tmp_string)-1]);
+			}
+			//$start_xx = $start_x + round(($max_width - $curr_width - $start_x) / 2);
+			$start_xx = $start_x;
+			//var_dump($tmp_string);
 			if ($write) {
 				$x = $start_xx;
-				unset($tmp_string[count($tmp_string)-1]);
+				$replace= false;
 				foreach ($tmp_string as $k => $s) {
 					$oColor = false;
 					if (array_key_exists($k, $coloredString)) {
 						$oColor = $coloredString[$k];
+						$replace = true;
+					} else {
+						$s .= " ";
+						if ($replace && preg_match("#^[A-Za-z]#", $s)) {
+							$s = " ".$s;
+						}
+						$replace = false;
 					}
 					$c = $oColor?$oColor:$color;
-					$d = imagettftext($image, $font_size, 0, $x, $start_y, $c, $font, $s." ");
+					$d = imagettftext($image, $font_size, 0, $x, $start_y, $c, $font, $s);
 					$x = $d[2];
 				}
 			}
@@ -156,7 +168,8 @@ function write_multiline_text($image, $font_size, $color, $font, $line_heigh, $t
 		}
 	}
 
-	$start_xx = $start_x + round(($max_width - $dim[4] - $start_x) / 2);
+	//$start_xx = $start_x + round(($max_width - $dim[4] - $start_x) / 2);
+	$start_xx = $start_x;
 	if ($write) {
 		$x = $start_xx;
 		foreach ($tmp_string as $k => $s) {

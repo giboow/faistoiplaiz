@@ -213,7 +213,13 @@ function drawFinal(datas)
 		hideFb = true;
 	} else {
 		fbSharing.unbind('click').click(function(){
-			window.open(link);
+			var title = "Fais Toi Plaiz";
+			var summary = "Toi aussi viens te faire plaiz en t'envoyant des fleurs ou en insultant tes amis!";
+			var fbLink = "http://www.facebook.com/sharer.php?s=100&p[title]="+title
+						+"&p[url]="+encodeURIComponent(link)
+						+"&p[summary]="+summary+"&p[images][0]="
+						+encodeURIComponent(datas.imgUrl);
+			window.open(fbLink);
 		});
 	}
 
