@@ -152,13 +152,14 @@ footer#homeFooter{
 	opacity: 0;
 	border-top: solid 2px $white;
 	#team{
-		margin: 5px 10px;
+		margin: 10px;
 		float: right;
 		text-transform : uppercase;
 		font-size: 11px;
 	}
 	.fb-like {
 		margin: 5px 10px;
+		float: left;
 	}
 }
 
