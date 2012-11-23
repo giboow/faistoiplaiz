@@ -166,7 +166,8 @@
 				</div>
 			</div>
 			<footer id="homeFooter">
-				<div class="fb-like" data-href="https://www.facebook.com/pages/AGD-MAG/137191636324924" data-send="false" data-layout="button_count" data-width="50" data-show-faces="false" data-font="arial"></div><div id="team">Concept et r&eacute;alisation : <a href="">3X3</a> & <a href="">AGDMAG</a></div>
+				<div class="fb-like" data-href="https://www.facebook.com/pages/AGD-MAG/137191636324924" data-send="false" data-layout="button_count" data-width="50" data-show-faces="false" data-font="arial"></div>
+				<div id="team">Concept et r&eacute;alisation : <a href="/3x3.php">3X3</a> & <a href="http://agdmag.com/">AGDMAG</a></div>
 			</footer>
 		</div>
 		<script type="text/javascript">

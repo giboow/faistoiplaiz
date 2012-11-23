@@ -60,7 +60,7 @@ function initEvents(){
 		openHome(function(){validName()});
 
 	} else {
-		$(".firstStep .separator").transition({width : "100%"}, 5000, openHome);
+		$(".firstStep .separator").animate({width : "100%"}, 5000, openHome);
 	}
 
 
@@ -74,10 +74,10 @@ function initEvents(){
 	var fbSharing = $(".thirdStep #final .fbSharing");
 	fbSharing.hover(function(){
 		$(this).stop();
-		$(this).transition({ left : $(".thirdStep #final #postit").position().left - $(this).width()+5});
+		$(this).animate({ left : $(".thirdStep #final #postit").position().left - $(this).width()+5});
 	}, function(){
 		$(this).stop();
-		fbSharing.transition({ left : $(".thirdStep #final #postit").position().left-26});
+		fbSharing.animate({ left : $(".thirdStep #final #postit").position().left-26});
 	})
 
 	$(".thirdStep #final .next").click(nextPhrase)
@@ -86,19 +86,19 @@ function initEvents(){
 function openHome(callback){
 
 	$(window).resize();
-	$('.firstStep').transition({opacity : 0}, function(){
+	$('.firstStep').animate({opacity : 0}, function(){
 		$(this).hide(0);
 		var time = 1000;
-		$('header#homeHeader #logo').transition({top: 0, position: "fixe"}, time, function(){
+		$('header#homeHeader #logo').animate({top: 0, position: "fixe"}, time, function(){
 		});
-		$('header#homeHeader').transition({position: "fixe", height: 103}, time, function(){
+		$('header#homeHeader').animate({position: "fixe", height: 103}, time, function(){
 			$(this).css('border-top', 'solid 2px white');
 			$(this).css('border-bottom', 'solid 2px white');
 			if($.isFunction(callback)) {
 				callback();
 			}
 		});
-		$('footer#homeFooter').transition({opacity : 1}, time);
+		$('footer#homeFooter').animate({opacity : 1}, time);
 
 
 	});
@@ -108,12 +108,12 @@ function leftClick(){
 	var time = 1000;
 	var el = $('.secondStep #leftBlock');
 	el.css('z-index', 100);
-	el.find('.contentBlock').transition({opacity : 0}, time);
-	el.transition({"margin-left": 0}, time, function(){
+	el.find('.contentBlock').animate({opacity : 0}, time);
+	el.animate({"margin-left": 0}, time, function(){
 		$('.thirdStep').css('display', 'block').addClass('lightBg');
 		$('.secondStep').hide(0);
 	});
-	$('.secondStep #rightBlock').transition({"margin-left" : "100%"}, time);
+	$('.secondStep #rightBlock').animate({"margin-left" : "100%"}, time);
 	$(document).data('insulte', 0);
 }
 
@@ -121,9 +121,9 @@ function rightClick(){
 	var time = 1000;
 	var el = $('.secondStep #rightBlock');
 	el.css('z-index', 100);
-	el.find('.contentBlock').transition({opacity : 0}, time);
-		$('.secondStep #leftBlock').transition({"margin-left": "-100%"}, time);
-		el.transition({"margin-left": 0}, time, function(){
+	el.find('.contentBlock').animate({opacity : 0}, time);
+		$('.secondStep #leftBlock').animate({"margin-left": "-100%"}, time);
+		el.animate({"margin-left": 0}, time, function(){
 		$('.thirdStep').css('display', 'block').addClass('darkBg');
 		$('.secondStep').hide();
 	});
@@ -135,7 +135,7 @@ function sexeChoice(sexe) {
 	$(window).resize();
 	var time = 1000;
 	$(document).data('sexe', sexe);
-	$('.thirdStep #first').transition({opacity : 0}, time, function(){
+	$('.thirdStep #first').animate({opacity : 0}, time, function(){
 		$(this).hide(0);
 		if ($(document).data('insulte')) {
 			$('.thirdStep #second .title').html('<div class="upper big">Qui veux-tu</div><div class="upper">vanner</div>');
@@ -144,7 +144,7 @@ function sexeChoice(sexe) {
 			$('.thirdStep #second .title').html('<div class="upper big">Comment</div><div class="upper">t\'appelles tu</div>');
 			$('.thirdStep #second input[name=prenom]').attr('placeholder', 'entre ton prenom');
 		}
-		$('.thirdStep #second').show(0).transition({opacity : 1}, time, function(){
+		$('.thirdStep #second').show(0).animate({opacity : 1}, time, function(){
 			$('.thirdStep #second form input[name=prenom]').focus();
 		});
 	})
@@ -186,9 +186,9 @@ function validName(){
 
 function nextPhrase() {
 	$(window).resize();
-	$(".thirdStep #final").transition({opacity:0}, function(){
+	$(".thirdStep #final").animate({opacity:0}, 1000, function(){
 		validName();
-	}, 1000);
+	});
 }
 
 
@@ -224,7 +224,7 @@ function drawFinal(datas)
 	}
 
 
-	$(".thirdStep #second").transition({opacity : 0}, time, function() {
+	$(".thirdStep #second").animate({opacity : 0}, time, function() {
 		$(".thirdStep #final *").show();
 		if(hideFb) {
 			fbSharing.unbind('click').hide();
@@ -234,7 +234,7 @@ function drawFinal(datas)
 		$(".thirdStep #final").css({opacity:0}).show(0);
 		$(window).resize();
 
-		$(".thirdStep #final").transition({opacity : 1}, time);
+		$(".thirdStep #final").animate({opacity : 1}, time);
 
 	});
 }
