@@ -642,4 +642,85 @@ footer#homeFooter{
 	}
 }
 
+#site.wait{
+	margin : 0 auto;
+	padding: 0;
+	#content {
+		margin : 0 auto;
+		padding: 0;
+		width : 400px;
+		height: 400px;
+		position : absolute;
+		#top {
+			#logo {
+				background-image : url("/img/Logo.png");
+				background-repeat: no-repeat;
+				width: 222px;
+				height: 75px;
+				margin : 0 auto;
+			}
+			.separator {
+				width: 70px;
+				border: solid 2px $white;
+				margin-top : 35px;
+			}
+			.leftSeparator {
+				@extend .separator;
+				float: left;
+			}
+			.rigthSeparator {
+				@extend .separator;
+				float: right;
+			}
+		}
+		.text {
+			font-family: Rockwell, arial, san-serif;
+			text-transform : uppercase;
+			text-align : center;
+			line-height: 67px;
+			.pos {
+			 	vertical-align: 35%;
+				font-size: 40px;
+			}
+			.top {
+				font-size: 75px;
+			}
+			.middle {
+				font-size: 71px;
+			}
+			.bottom {
+				font-size: 84px;
+				color: $lightBlue;
+			}
+		}
+		#compteur {
+			text-align : center;
+			margin-top: 20px;
+			padding: 10px;
+			border-top : 4px solid $white;
+			border-bottom : 4px solid $white;
+			width : 100%;
+			text-transform: uppercase;
+			.top{
+				font-size: 45px;
+			}
+			.bottom{
+				font-size: 32px;
+			}
+			.light{
+
+			}
+			#heures{
+				font-family : Rockwell-Light;
+				font-size : 40px;
+			}
+
+			#minutes{
+				font-family : Rockwell-Light;
+				font-size : 28px;
+			}
+		}
+	}
+
+}
 

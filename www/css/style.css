@@ -128,7 +128,7 @@ header#homeHeader #logo .firstStep {
   font-size: 1.5em;
 }
 /* line 133, ../../compass/style.scss */
-header#homeHeader #logo .firstStep .separator, header#homeHeader #logo .firstStep .blocks .title .middle .separatorLeft, .blocks .title .middle header#homeHeader #logo .firstStep .separatorLeft, header#homeHeader #logo .firstStep #leftBlock .title .middle .separatorLeft, #leftBlock .title .middle header#homeHeader #logo .firstStep .separatorLeft, header#homeHeader #logo .firstStep #rightBlock .title .middle .separatorLeft, #rightBlock .title .middle header#homeHeader #logo .firstStep .separatorLeft, header#homeHeader #logo .firstStep .blocks .title .middle .separatorRight, .blocks .title .middle header#homeHeader #logo .firstStep .separatorRight, header#homeHeader #logo .firstStep #leftBlock .title .middle .separatorRight, #leftBlock .title .middle header#homeHeader #logo .firstStep .separatorRight, header#homeHeader #logo .firstStep #rightBlock .title .middle .separatorRight, #rightBlock .title .middle header#homeHeader #logo .firstStep .separatorRight, header#homeHeader #logo .firstStep .thirdStep .text .rightSeparator, .thirdStep .text header#homeHeader #logo .firstStep .rightSeparator, header#homeHeader #logo .firstStep .thirdStep .text .leftSeparator, .thirdStep .text header#homeHeader #logo .firstStep .leftSeparator {
+header#homeHeader #logo .firstStep .separator, header#homeHeader #logo .firstStep .blocks .title .middle .separatorLeft, .blocks .title .middle header#homeHeader #logo .firstStep .separatorLeft, header#homeHeader #logo .firstStep #leftBlock .title .middle .separatorLeft, #leftBlock .title .middle header#homeHeader #logo .firstStep .separatorLeft, header#homeHeader #logo .firstStep #rightBlock .title .middle .separatorLeft, #rightBlock .title .middle header#homeHeader #logo .firstStep .separatorLeft, header#homeHeader #logo .firstStep .blocks .title .middle .separatorRight, .blocks .title .middle header#homeHeader #logo .firstStep .separatorRight, header#homeHeader #logo .firstStep #leftBlock .title .middle .separatorRight, #leftBlock .title .middle header#homeHeader #logo .firstStep .separatorRight, header#homeHeader #logo .firstStep #rightBlock .title .middle .separatorRight, #rightBlock .title .middle header#homeHeader #logo .firstStep .separatorRight, header#homeHeader #logo .firstStep .thirdStep .text .rightSeparator, .thirdStep .text header#homeHeader #logo .firstStep .rightSeparator, header#homeHeader #logo .firstStep .thirdStep .text .leftSeparator, .thirdStep .text header#homeHeader #logo .firstStep .leftSeparator, header#homeHeader #logo .firstStep #site.wait #content #top .leftSeparator, #site.wait #content #top header#homeHeader #logo .firstStep .leftSeparator, header#homeHeader #logo .firstStep #site.wait #content #top .rigthSeparator, #site.wait #content #top header#homeHeader #logo .firstStep .rigthSeparator {
   margin: 20px auto;
   width: 350px;
   border-top: solid 2px white;
@@ -209,7 +209,7 @@ footer#homeFooter .fb-like {
   text-align: center;
 }
 /* line 207, ../../compass/style.scss */
-.blocks .title .middle .separator, #leftBlock .title .middle .separator, #rightBlock .title .middle .separator, .blocks .title .middle .separatorLeft, #leftBlock .blocks .title .middle .separatorLeft, .blocks #leftBlock .title .middle .separatorLeft, #rightBlock .blocks .title .middle .separatorLeft, .blocks #rightBlock .title .middle .separatorLeft, .blocks #leftBlock .title .middle .separatorLeft, #leftBlock .blocks .title .middle .separatorLeft, #leftBlock .title .middle .separatorLeft, #rightBlock #leftBlock .title .middle .separatorLeft, #leftBlock #rightBlock .title .middle .separatorLeft, .blocks #rightBlock .title .middle .separatorLeft, #rightBlock .blocks .title .middle .separatorLeft, #leftBlock #rightBlock .title .middle .separatorLeft, #rightBlock #leftBlock .title .middle .separatorLeft, #rightBlock .title .middle .separatorLeft, .blocks .title .middle .separatorRight, #leftBlock .blocks .title .middle .separatorRight, .blocks #leftBlock .title .middle .separatorRight, #rightBlock .blocks .title .middle .separatorRight, .blocks #rightBlock .title .middle .separatorRight, .blocks #leftBlock .title .middle .separatorRight, #leftBlock .blocks .title .middle .separatorRight, #leftBlock .title .middle .separatorRight, #rightBlock #leftBlock .title .middle .separatorRight, #leftBlock #rightBlock .title .middle .separatorRight, .blocks #rightBlock .title .middle .separatorRight, #rightBlock .blocks .title .middle .separatorRight, #leftBlock #rightBlock .title .middle .separatorRight, #rightBlock #leftBlock .title .middle .separatorRight, #rightBlock .title .middle .separatorRight, .blocks .title .middle .thirdStep .text .rightSeparator, .thirdStep .text .blocks .title .middle .rightSeparator, #leftBlock .title .middle .thirdStep .text .rightSeparator, .thirdStep .text #leftBlock .title .middle .rightSeparator, #rightBlock .title .middle .thirdStep .text .rightSeparator, .thirdStep .text #rightBlock .title .middle .rightSeparator, .blocks .title .middle .thirdStep .text .leftSeparator, .thirdStep .text .blocks .title .middle .leftSeparator, #leftBlock .title .middle .thirdStep .text .leftSeparator, .thirdStep .text #leftBlock .title .middle .leftSeparator, #rightBlock .title .middle .thirdStep .text .leftSeparator, .thirdStep .text #rightBlock .title .middle .leftSeparator {
+.blocks .title .middle .separator, #leftBlock .title .middle .separator, #rightBlock .title .middle .separator, .blocks .title .middle .separatorLeft, #leftBlock .blocks .title .middle .separatorLeft, .blocks #leftBlock .title .middle .separatorLeft, #rightBlock .blocks .title .middle .separatorLeft, .blocks #rightBlock .title .middle .separatorLeft, .blocks #leftBlock .title .middle .separatorLeft, #leftBlock .blocks .title .middle .separatorLeft, #leftBlock .title .middle .separatorLeft, #rightBlock #leftBlock .title .middle .separatorLeft, #leftBlock #rightBlock .title .middle .separatorLeft, .blocks #rightBlock .title .middle .separatorLeft, #rightBlock .blocks .title .middle .separatorLeft, #leftBlock #rightBlock .title .middle .separatorLeft, #rightBlock #leftBlock .title .middle .separatorLeft, #rightBlock .title .middle .separatorLeft, .blocks .title .middle .separatorRight, #leftBlock .blocks .title .middle .separatorRight, .blocks #leftBlock .title .middle .separatorRight, #rightBlock .blocks .title .middle .separatorRight, .blocks #rightBlock .title .middle .separatorRight, .blocks #leftBlock .title .middle .separatorRight, #leftBlock .blocks .title .middle .separatorRight, #leftBlock .title .middle .separatorRight, #rightBlock #leftBlock .title .middle .separatorRight, #leftBlock #rightBlock .title .middle .separatorRight, .blocks #rightBlock .title .middle .separatorRight, #rightBlock .blocks .title .middle .separatorRight, #leftBlock #rightBlock .title .middle .separatorRight, #rightBlock #leftBlock .title .middle .separatorRight, #rightBlock .title .middle .separatorRight, .blocks .title .middle .thirdStep .text .rightSeparator, .thirdStep .text .blocks .title .middle .rightSeparator, #leftBlock .title .middle .thirdStep .text .rightSeparator, .thirdStep .text #leftBlock .title .middle .rightSeparator, #rightBlock .title .middle .thirdStep .text .rightSeparator, .thirdStep .text #rightBlock .title .middle .rightSeparator, .blocks .title .middle .thirdStep .text .leftSeparator, .thirdStep .text .blocks .title .middle .leftSeparator, #leftBlock .title .middle .thirdStep .text .leftSeparator, .thirdStep .text #leftBlock .title .middle .leftSeparator, #rightBlock .title .middle .thirdStep .text .leftSeparator, .thirdStep .text #rightBlock .title .middle .leftSeparator, .blocks .title .middle #site.wait #content #top .leftSeparator, #site.wait #content #top .blocks .title .middle .leftSeparator, #leftBlock .title .middle #site.wait #content #top .leftSeparator, #site.wait #content #top #leftBlock .title .middle .leftSeparator, #rightBlock .title .middle #site.wait #content #top .leftSeparator, #site.wait #content #top #rightBlock .title .middle .leftSeparator, .blocks .title .middle #site.wait #content #top .rigthSeparator, #site.wait #content #top .blocks .title .middle .rigthSeparator, #leftBlock .title .middle #site.wait #content #top .rigthSeparator, #site.wait #content #top #leftBlock .title .middle .rigthSeparator, #rightBlock .title .middle #site.wait #content #top .rigthSeparator, #site.wait #content #top #rightBlock .title .middle .rigthSeparator {
   width: 110px;
   margin-top: 20px;
   border-top: solid 3px;
@@ -323,7 +323,7 @@ footer#homeFooter .fb-like {
   font-size: 40px;
 }
 /* line 315, ../../compass/style.scss */
-.thirdStep .text .separator, .thirdStep .text .blocks .title .middle .separatorLeft, .blocks .title .middle .thirdStep .text .separatorLeft, .thirdStep .text #leftBlock .title .middle .separatorLeft, #leftBlock .title .middle .thirdStep .text .separatorLeft, .thirdStep .text #rightBlock .title .middle .separatorLeft, #rightBlock .title .middle .thirdStep .text .separatorLeft, .thirdStep .text .blocks .title .middle .separatorRight, .blocks .title .middle .thirdStep .text .separatorRight, .thirdStep .text #leftBlock .title .middle .separatorRight, #leftBlock .title .middle .thirdStep .text .separatorRight, .thirdStep .text #rightBlock .title .middle .separatorRight, #rightBlock .title .middle .thirdStep .text .separatorRight, .thirdStep .text .rightSeparator, .thirdStep .text .leftSeparator {
+.thirdStep .text .separator, .thirdStep .text .blocks .title .middle .separatorLeft, .blocks .title .middle .thirdStep .text .separatorLeft, .thirdStep .text #leftBlock .title .middle .separatorLeft, #leftBlock .title .middle .thirdStep .text .separatorLeft, .thirdStep .text #rightBlock .title .middle .separatorLeft, #rightBlock .title .middle .thirdStep .text .separatorLeft, .thirdStep .text .blocks .title .middle .separatorRight, .blocks .title .middle .thirdStep .text .separatorRight, .thirdStep .text #leftBlock .title .middle .separatorRight, #leftBlock .title .middle .thirdStep .text .separatorRight, .thirdStep .text #rightBlock .title .middle .separatorRight, #rightBlock .title .middle .thirdStep .text .separatorRight, .thirdStep .text .rightSeparator, .thirdStep .text .leftSeparator, .thirdStep .text #site.wait #content #top .leftSeparator, #site.wait #content #top .thirdStep .text .leftSeparator, .thirdStep .text #site.wait #content #top .rigthSeparator, #site.wait #content #top .thirdStep .text .rigthSeparator {
   width: 135px;
   margin-top: 20px;
   border-top: solid 3px;
@@ -392,7 +392,7 @@ footer#homeFooter .fb-like {
   background-image: url("/img/femme_survol.png");
 }
 /* line 377, ../../compass/style.scss */
-.thirdStep #first .choice .separator, .thirdStep #first .choice .blocks .title .middle .separatorLeft, .blocks .title .middle .thirdStep #first .choice .separatorLeft, .thirdStep #first .choice #leftBlock .title .middle .separatorLeft, #leftBlock .title .middle .thirdStep #first .choice .separatorLeft, .thirdStep #first .choice #rightBlock .title .middle .separatorLeft, #rightBlock .title .middle .thirdStep #first .choice .separatorLeft, .thirdStep #first .choice .blocks .title .middle .separatorRight, .blocks .title .middle .thirdStep #first .choice .separatorRight, .thirdStep #first .choice #leftBlock .title .middle .separatorRight, #leftBlock .title .middle .thirdStep #first .choice .separatorRight, .thirdStep #first .choice #rightBlock .title .middle .separatorRight, #rightBlock .title .middle .thirdStep #first .choice .separatorRight, .thirdStep #first .choice .text .rightSeparator, .thirdStep .text #first .choice .rightSeparator, .thirdStep #first .choice .text .leftSeparator, .thirdStep .text #first .choice .leftSeparator {
+.thirdStep #first .choice .separator, .thirdStep #first .choice .blocks .title .middle .separatorLeft, .blocks .title .middle .thirdStep #first .choice .separatorLeft, .thirdStep #first .choice #leftBlock .title .middle .separatorLeft, #leftBlock .title .middle .thirdStep #first .choice .separatorLeft, .thirdStep #first .choice #rightBlock .title .middle .separatorLeft, #rightBlock .title .middle .thirdStep #first .choice .separatorLeft, .thirdStep #first .choice .blocks .title .middle .separatorRight, .blocks .title .middle .thirdStep #first .choice .separatorRight, .thirdStep #first .choice #leftBlock .title .middle .separatorRight, #leftBlock .title .middle .thirdStep #first .choice .separatorRight, .thirdStep #first .choice #rightBlock .title .middle .separatorRight, #rightBlock .title .middle .thirdStep #first .choice .separatorRight, .thirdStep #first .choice .text .rightSeparator, .thirdStep .text #first .choice .rightSeparator, .thirdStep #first .choice .text .leftSeparator, .thirdStep .text #first .choice .leftSeparator, .thirdStep #first .choice #site.wait #content #top .leftSeparator, #site.wait #content #top .thirdStep #first .choice .leftSeparator, .thirdStep #first .choice #site.wait #content #top .rigthSeparator, #site.wait #content #top .thirdStep #first .choice .rigthSeparator {
   margin: 20px 5px;
   height: 90px;
   border-left: solid 3px;
@@ -705,4 +705,93 @@ footer#homeFooter .fb-like {
 /* line 639, ../../compass/style.scss */
 .darkBg #final .next {
   background-image: url("/img/next-blanc.png");
+}
+
+/* line 645, ../../compass/style.scss */
+#site.wait {
+  margin: 0 auto;
+  padding: 0;
+}
+/* line 648, ../../compass/style.scss */
+#site.wait #content {
+  margin: 0 auto;
+  padding: 0;
+  width: 400px;
+  height: 400px;
+  position: absolute;
+}
+/* line 655, ../../compass/style.scss */
+#site.wait #content #top #logo {
+  background-image: url("/img/Logo.png");
+  background-repeat: no-repeat;
+  width: 222px;
+  height: 75px;
+  margin: 0 auto;
+}
+/* line 662, ../../compass/style.scss */
+#site.wait #content #top .separator, #site.wait #content #top .blocks .title .middle .separatorLeft, .blocks .title .middle #site.wait #content #top .separatorLeft, #site.wait #content #top #leftBlock .title .middle .separatorLeft, #leftBlock .title .middle #site.wait #content #top .separatorLeft, #site.wait #content #top #rightBlock .title .middle .separatorLeft, #rightBlock .title .middle #site.wait #content #top .separatorLeft, #site.wait #content #top .blocks .title .middle .separatorRight, .blocks .title .middle #site.wait #content #top .separatorRight, #site.wait #content #top #leftBlock .title .middle .separatorRight, #leftBlock .title .middle #site.wait #content #top .separatorRight, #site.wait #content #top #rightBlock .title .middle .separatorRight, #rightBlock .title .middle #site.wait #content #top .separatorRight, #site.wait #content #top .thirdStep .text .rightSeparator, .thirdStep .text #site.wait #content #top .rightSeparator, #site.wait #content #top .thirdStep .text .leftSeparator, .thirdStep .text #site.wait #content #top .leftSeparator, #site.wait #content #top .leftSeparator, #site.wait #content #top .rigthSeparator {
+  width: 70px;
+  border: solid 2px white;
+  margin-top: 35px;
+}
+/* line 667, ../../compass/style.scss */
+#site.wait #content #top .leftSeparator {
+  float: left;
+}
+/* line 671, ../../compass/style.scss */
+#site.wait #content #top .rigthSeparator {
+  float: right;
+}
+/* line 676, ../../compass/style.scss */
+#site.wait #content .text {
+  font-family: Rockwell, arial, san-serif;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 67px;
+}
+/* line 681, ../../compass/style.scss */
+#site.wait #content .text .pos {
+  vertical-align: 35%;
+  font-size: 40px;
+}
+/* line 685, ../../compass/style.scss */
+#site.wait #content .text .top {
+  font-size: 75px;
+}
+/* line 688, ../../compass/style.scss */
+#site.wait #content .text .middle {
+  font-size: 71px;
+}
+/* line 691, ../../compass/style.scss */
+#site.wait #content .text .bottom {
+  font-size: 84px;
+  color: #15b3f1;
+}
+/* line 696, ../../compass/style.scss */
+#site.wait #content #compteur {
+  text-align: center;
+  margin-top: 20px;
+  padding: 10px;
+  border-top: 4px solid white;
+  border-bottom: 4px solid white;
+  width: 100%;
+  text-transform: uppercase;
+}
+/* line 704, ../../compass/style.scss */
+#site.wait #content #compteur .top {
+  font-size: 45px;
+}
+/* line 707, ../../compass/style.scss */
+#site.wait #content #compteur .bottom {
+  font-size: 32px;
+}
+/* line 713, ../../compass/style.scss */
+#site.wait #content #compteur #heures {
+  font-family: Rockwell-Light;
+  font-size: 40px;
+}
+/* line 718, ../../compass/style.scss */
+#site.wait #content #compteur #minutes {
+  font-family: Rockwell-Light;
+  font-size: 28px;
 }
