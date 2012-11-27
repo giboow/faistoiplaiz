@@ -165,11 +165,11 @@
 				</div>
 			</div>
 			<footer id="homeFooter">
-				<div class="fb-like" width="300px" data-href="https://www.facebook.com/pages/AGD-MAG/137191636324924" data-send="false" data-layout="button_count" data-width="50" data-show-faces="false" data-font="arial"></div>
+				<div class="fb-like" width="300px" data-href="https://www.facebook.com/pages/Fais-toi-plaiz/409891349080073" data-send="false" data-layout="button_count" data-width="50" data-show-faces="false" data-font="arial"></div>
 				<div id="team">
 					Concept et r&eacute;alisation : <a href="/3x3.php">3X3</a>
 					 & <a href="http://agdmag.com/">AGDMAG</a>
-				 	// <a href="/partenaire.php">Partenaires</a>
+				 	// <a href="/partenaires.php">Partenaires</a>
 				 </div>
 				<div class=".clear"></div>
 			</footer>
