@@ -794,3 +794,23 @@ footer#homeFooter{
 	}
 }
 
+
+#content .blockPartenaire {
+	.title {
+		text-align : center;
+		text-transform: uppercase;
+	}
+	.partenaires {
+		.line {
+			clear: both;
+			.part{
+				float: left;
+				width: 150px;
+				height: 100px;
+				background: $white;
+				margin: 5px;
+			}
+		}
+	}
+}
+

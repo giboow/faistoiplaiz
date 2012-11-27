@@ -31,7 +31,9 @@
 				top: function(){
 					var h = $(this).height();
 					var wH = $(window).height();
-					return (wH-h)/2;
+					console.log(wH);
+
+					return (103+wH-h)/2;
 				},
 				left: function(){
 					var h = $(this).width();
