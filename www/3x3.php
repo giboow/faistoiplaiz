@@ -31,8 +31,6 @@
 				top: function(){
 					var h = $(this).height();
 					var wH = $(window).height();
-					console.log(wH);
-
 					return (103+wH-h)/2;
 				},
 				left: function(){
@@ -65,7 +63,7 @@
 			<div id="content" class="lightBg">
 				<div class="blockTeam">
 					<div id="presentation">
-						<div class="logo">3X3</div>
+						<div class="logo"></div>
 						<div class="text">
 							<div class="top">3 fois 3 c&apos;est le collectif incontournable de la cr&eacute;ation digital!</div>
 							<div class="middle">Anim&eacute; par cette envie d&apos;avancer et de cr&eacute;er des projets</div>
