@@ -69,6 +69,15 @@
 			}
 
 		</script>
+		<script>
+		(function(d, s, id) {
+		  var js, fjs = d.getElementsByTagName(s)[0];
+		  if (d.getElementById(id)) return;
+		  js = d.createElement(s); js.id = id;
+		  js.src = "//connect.facebook.net/fr_FR/all.js#xfbml=1&appId=375265012567825";
+		  fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));
+		</script>
 	</head>
 
 	<body>
@@ -106,6 +115,10 @@
 							secondes
 						</span>
 					</div>
+				</div>
+				<div id="share">
+					<div class="fb-like" data-href="https://www.facebook.com/pages/Fais-toi-plaiz/409891349080073"
+							data-send="false" data-layout="button_count" data-width="50" data-show-faces="false" data-font="arial"></div>
 				</div>
 			</div>
 		</div>
