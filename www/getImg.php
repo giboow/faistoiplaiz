@@ -88,12 +88,11 @@ $id = $datas->id;
 $phrase = getPhrase($bdd, $datas->sexe, $datas->insulte, $id);
 
 $text = $phrase["phrase"];
-//var_dump($phrase);
 $text = mb_strtoupper($text);
 $prenom = $datas->prenom;
 $prenom = str_split($prenom, 18)[0];
 $colored = array('{PRENOM}' => array('color' => $colorConf['prenom'], 'value' => strtoupper($prenom)));
-$y = write_multiline_text($im, 25, $colorConf['color'], $font, 10, $text, 0, 0, 278, false, $colored);
+$y = write_multiline_text($im, 25, $colorConf['color'], $font, 33, $text, 0, 0, 278, false, $colored);
 $y1 = $y + 100;
 $yTop = (398-$y1)/2;
 
@@ -107,7 +106,7 @@ imageline ( $im, 208 , $yTop+16 , 288 , $yTop+16 , $colorConf['color']);
 
 $y2 = $yTop + 60;
 
-$y = write_multiline_text($im, 25, $colorConf['color'], $font, 10, $text, 15, $y2, 278, true, $colored);
+$y = write_multiline_text($im, 25, $colorConf['color'], $font, 33, $text, 15, $y2, 278, true, $colored);
 
 $y= $y+15;
 imageline($im, 20, $y, 288, $y, $colorConf['color']);

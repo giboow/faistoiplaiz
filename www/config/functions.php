@@ -163,7 +163,13 @@ function write_multiline_text($image, $font_size, $color, $font, $line_heigh, $t
 			$coloredString = array();
 			$tmp_string = array();
 			$string = "";
-			$start_y += abs($dim[5]) + $line_heigh;
+			$d = abs($dim[5]);
+			if ($d >= $line_heigh) {
+				$start_y += $d;
+			} else {
+				$start_y += $line_heigh;
+			}
+			//$start_y += abs($dim[5]) + $line_heigh;
 			$curr_width = 0;
 		}
 	}
