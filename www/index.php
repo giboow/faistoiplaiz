@@ -23,6 +23,9 @@
 			<?php endif;?>
 		</script>
 
+		<script type="text/javascript" src="/js/main.js"></script>
+	</head>
+	<body>
 		<div id="fb-root"></div>
 		<script>
 		(function(d, s, id) {
@@ -33,9 +36,6 @@
 		  fjs.parentNode.insertBefore(js, fjs);
 		}(document, 'script', 'facebook-jssdk'));
 		</script>
-		<script type="text/javascript" src="/js/main.js"></script>
-	</head>
-	<body>
 
 		<div id="site">
 			<header id="homeHeader">
@@ -165,10 +165,10 @@
 				</div>
 			</div>
 			<footer id="homeFooter">
-				<div class="fb-like" width="300px" data-href="https://www.facebook.com/pages/Fais-toi-plaiz/409891349080073" data-send="false" data-layout="button_count" data-width="50" data-show-faces="false" data-font="arial"></div>
+				<div class="fb-like" data-href="https://www.facebook.com/pages/Fais-toi-plaiz/409891349080073" data-send="false" data-layout="button_count" data-width="50" data-show-faces="false" data-font="arial"></div>
 				<div id="team">
 					Concept et r&eacute;alisation : <a href="/3x3.php">3X3</a>
-					 & <a href="http://agdmag.com/">AGDMAG</a>
+					 &amp; <a href="http://agdmag.com/">AGDMAG</a>
 				 	// <a href="/partenaires.php">Partenaires</a>
 				 </div>
 				<div class=".clear"></div>

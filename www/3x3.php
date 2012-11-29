@@ -16,6 +16,7 @@
 
 	<script type="text/javascript">
 		$(document).ready(function(){
+			$('header#homeHeader .imgLogo').click(function(){$(document).attr('location', '/');});
 			$('#team .member').hover(function(){
 				$(this).find('.text').stop().animate({"margin-top": "120%"}, 800);
 			}, function(){
@@ -31,7 +32,11 @@
 				top: function(){
 					var h = $(this).height();
 					var wH = $(window).height();
-					return (103+wH-h)/2;
+					var r = (103+wH-h)/2;
+					if(r < 103) {
+						return false;
+					}
+					return r;
 				},
 				left: function(){
 					var h = $(this).width();
@@ -109,10 +114,10 @@
 				</div>
 			</div>
 			<footer id="homeFooter">
-				<div class="fb-like" width="300px" data-href="https://www.facebook.com/pages/Fais-toi-plaiz/409891349080073" data-send="false" data-layout="button_count" data-width="50" data-show-faces="false" data-font="arial"></div>
+				<div class="fb-like" data-href="https://www.facebook.com/pages/Fais-toi-plaiz/409891349080073" data-send="false" data-layout="button_count" data-width="50" data-show-faces="false" data-font="arial"></div>
 				<div id="team">
 					Concept et r&eacute;alisation : <a href="/3x3.php">3X3</a>
-					 & <a href="http://agdmag.com/">AGDMAG</a>
+					 &amp; <a href="http://agdmag.com/">AGDMAG</a>
 				 	// <a href="/partenaires.php">Partenaires</a>
 				 </div>
 				<div class=".clear"></div>

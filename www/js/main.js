@@ -1,5 +1,4 @@
 $(document).ready(function(){
-
 	initElements();
 	initEvents();
 });
@@ -185,8 +184,9 @@ function validName(){
 
 
 function nextPhrase() {
+	var time = 500;
 	$(window).resize();
-	$(".thirdStep #final").animate({opacity:0}, 1000, function(){
+	$(".thirdStep #final").animate({opacity:0}, time, function(){
 		validName();
 	});
 }
@@ -194,7 +194,7 @@ function nextPhrase() {
 
 function drawFinal(datas)
 {
-	var time = 1000;
+	var time = 500;
 	var prenom = datas.prenom;
 	var phrase = datas.phrase;
 	var color = datas.color;
@@ -219,6 +219,7 @@ function drawFinal(datas)
 						+"&p[url]="+encodeURIComponent(link)
 						+"&p[summary]="+summary+"&p[images][0]="
 						+encodeURIComponent(datas.imgUrl);
+			//fbLink = link;
 			window.open(fbLink);
 		});
 	}
@@ -235,6 +236,5 @@ function drawFinal(datas)
 		$(window).resize();
 
 		$(".thirdStep #final").animate({opacity : 1}, time);
-
 	});
 }

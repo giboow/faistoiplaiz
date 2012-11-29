@@ -90,7 +90,7 @@ body {
    	margin: 0;
    	overflow: hidden;
    	min-width: 800px;
-   	min-height: 600px;
+   	min-height: 700px;
    	font-family: Rockwell, arial, sans-serif;
 }
 
@@ -802,17 +802,31 @@ footer#homeFooter{
 	.title {
 		text-align : center;
 		text-transform: uppercase;
+		margin: 20px;
+		.text{
+			width : 200px;
+			font-size: 30px;
+			padding: 5px;
+			margin: 0 auto;
+			border-top: solid 2px $white;
+			border-bottom: solid 2px $white;
+		}
 
 	}
 	.partenaires {
 		.line {
 			clear: both;
+			width: 960px;
 			.part{
 				float: left;
 				width: 150px;
 				height: 100px;
 				background: $white;
 				margin: 5px;
+				img {
+					width: 100%;
+					height: 100%;
+				}
 			}
 		}
 	}
