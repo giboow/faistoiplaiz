@@ -11,41 +11,39 @@
 			<?php endif;?>
 		</style>
 		<script type="text/javascript" src="/js/jquery-1.8.2.min.js"></script>
-		<script type="text/javascript" src="/js/jquery.transit.js"></script>
-		<script type="text/javascript" src="/js/jquery.timers.js"></script>
 
-	<script type="text/javascript">
-		$(document).ready(function(){
-			$('header#homeHeader .imgLogo').click(function(){$(document).attr('location', '/');});
-			$(window).resize(resize);
-			resize();
-		});
-
-		function resize(){
-			$("#content .blockPartenaire").css({position: "absolute"});
-			$("#content .blockPartenaire").css({
-				top: function(){
-					var h = $(this).height();
-					var wH = $(window).height();
-					var r = (wH-h)/2;
-					if (r<103) {
-						return false;
-					}
-					return r;
-				},
-				left: function(){
-					var h = $(this).width();
-					var wH = $(window).width();
-					var r = (wH-h)/2;
-					if (r<0) {
-						return false;
-					}
-					return r;
-				}
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$('header#homeHeader .imgLogo').click(function(){$(document).attr('location', '/');});
+				$(window).resize(resize);
+				resize();
 			});
-		}
 
-	</script>
+			function resize(){
+				$("#content .blockPartenaire").css({position: "absolute"});
+				$("#content .blockPartenaire").css({
+					top: function(){
+						var h = $(this).height();
+						var wH = $(window).height();
+						var r = (wH-h)/2;
+						if (r<103) {
+							return false;
+						}
+						return r;
+					},
+					left: function(){
+						var h = $(this).width();
+						var wH = $(window).width();
+						var r = (wH-h)/2;
+						if (r<0) {
+							return false;
+						}
+						return r;
+					}
+				});
+			}
+
+		</script>
 	</head>
 	<body>
 		<div id="fb-root"></div>
@@ -74,15 +72,24 @@
 						<?php
 						$partenaires =
 							array(
-								'agdmag' => array('url' => 'http://www.agdmag.com', 'img' => '/img/partenaires/test.png'),
-								'giboow' => array('url' => 'http://www.giboow.fr', 'img' => '/img/partenaires/test.png'),
-								'FTP' => array('url' => 'http://www.ftp.com', 'img' => '/img/partenaires/test.png'),
-								'Facebook' => array('url' => 'http://www.facebook.com', 'img' => '/img/partenaires/test.png'),
-								'Twitter' => array('url' => 'http://www.twitter.com', 'img' => '/img/partenaires/test.png'),
-								'InTheMix' => array('url' => 'http://www.inthemix.com', 'img' => '/img/partenaires/test.png'),
-								'Toto' => array('url' => 'http://www.toto.com', 'img' => '/img/partenaires/test.png'),
-								'GoldorakGo' => array('url' => 'http://www.goldorak.com', 'img' => '/img/partenaires/test.png'),
-								'JamesBond' => array('url' => 'http://www.skyfall.com', 'img' => '/img/partenaires/test.png'),
+								'AGDMAG' => array('url' => 'http://www.agdmag.com/', 'img' => '/img/partenaires/AGD.jpg'),
+								'KESAKO' => array('url' => 'http://www.kesako-le-blog.fr/', 'img' => '/img/partenaires/KESAKO.jpg'),
+								'BEWARE MAG' => array('url' => 'http://bewaremag.com/', 'img' => '/img/partenaires/BEWAREMAG.jpg'),
+								'MY GUERILLA MAKETING' => array(
+									'url' => 'https://www.facebook.com/MyGuerillaMarketing?fref=ts',
+									'img' => '/img/partenaires/my-guerilla-Marketing.jpg'
+								),
+								'THE BRAND NATION' => array(
+									'url' => 'https://www.facebook.com/TheBrandNation?fref=ts',
+									'img' => '/img/partenaires/THE-BRAND-NATION.jpg'
+								),
+								'La Pubotheque' => array(
+									'url' => 'https://www.facebook.com/lapubotheque?fref=ts',
+									'img' => '/img/partenaires/PUBOTHEQUE.jpg'
+								),
+								'Houhouhaha' => array('url' => 'http://houhouhaha.fr/', 'img' => '/img/partenaires/HOUHOUHAHA.jpg'),
+								'Blog Esprit Design' => array('url' => 'http://www.blog-espritdesign.com/', 'img' => '/img/partenaires/BED.jpg'),
+								'ZEUTCH' => array('url' => 'http://www.zeutch.com/', 'img' => '/img/partenaires/ZEUTCH.jpg'),
 							);
 						$datas = array_chunk($partenaires, 6, true);?>
 						<?php foreach($datas as $partenaires) :?>
