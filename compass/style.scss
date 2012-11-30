@@ -768,14 +768,13 @@ footer#homeFooter{
 		width: 1230px;
 		.member {
 			border: solid 1px $white;
-			background-image: url('/img/team/john.png');
 			width: 203px;
 			height: 403px;
 			float: left;
 			.text {
 				margin : 200% auto;
 				width: 100%;
-				height: 40%;
+				height: 45%;
 				background: $white;
 				color: $black;
 				font-size: 13px;
@@ -790,9 +789,40 @@ footer#homeFooter{
 					color: $lightBlue;
 					margin-bottom: 5px;
 				}
-
+				.reseaux{
+					height: 25px;
+					width: 60px;
+					margin : 0 auto;
+					div{
+						width: 25px;
+						height: 25px;
+						float: left;
+						cursor: pointer;
+					}
+					.facebook{
+						background-image: url('/img/facebook.png');
+					}
+					.twitter{
+						background-image: url('/img/twitter.png');
+					}
+				}
 			}
 			overflow: hidden;
+		}
+		.member.john {
+			background-image: url('/img/team/JOHN.jpg');
+		}
+		.member.anais {
+			background-image: url('/img/team/ANAIS.jpg');
+		}
+		.member.joanne {
+			background-image: url('/img/team/JOANNE.jpg');
+		}
+		.member.marie-eva {
+			background-image: url('/img/team/MARIE-EVA.jpg');
+		}
+		.member.papoul {
+			background-image: url('/img/team/PAPOUL.jpg');
 		}
 	}
 }
