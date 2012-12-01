@@ -117,6 +117,7 @@
 								<div class="rightSeparator"></div>
 							</div>
 							<div class="ombre"></div>
+							<div class="help">Choisis le sexe de la personne que tu veux complimenter</div>
 						</div>
 						<div id="second">
 							<div class="text">
@@ -154,6 +155,7 @@
 									<div class="separatorBottom"></div>
 								</div>
 							</div>
+							<div class="helpSharing"></div>
 							<div class="next"></div>
 							<div class="fbSharing"></div>
 							<div class="ombre"></div>

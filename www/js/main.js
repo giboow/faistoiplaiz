@@ -22,23 +22,31 @@ $(window).resize(function(){
 		    },
 		});
 
-		$(".thirdStep #final #postit .content").css(
-			'padding-top',
-			($(".thirdStep #final #postit").height() - $(".thirdStep #final #postit .content").height())/2
-		);
 
 		var postit = $(".thirdStep #final #postit");
 		var fbSharing = $(".thirdStep #final .fbSharing");
 		var next = $(".thirdStep #final .next");
+		var helpSharing = $(".thirdStep #final .helpSharing");
 		postit.css('left', $(window).width()/2-postit.width()/2);
 
 
 		var position = postit.position();
-		fbSharing.css('left', position.left-26);
-		fbSharing.css('top', position.top+postit.height()*2/3);
+		fbSharing.css({
+			left: position.left-26,
+			top: position.top+postit.height()*2/3
+		});
 
-		next.css('left', position.left+postit.width()+next.width()/2);
-		next.css('top', position.top+postit.height()/2);
+		helpSharing.css({
+			left: position.left - helpSharing.width() - 30,
+			top: fbSharing.position().top - helpSharing.height() - 10
+		});
+
+
+		next.css({
+			left: position.left+postit.width()+next.width()/2,
+			top: position.top+postit.height()/2
+		});
+
 
 });
 
@@ -59,7 +67,11 @@ function initEvents(){
 		openHome(function(){validName()});
 
 	} else {
+
 		$(".firstStep .separator").animate({width : "100%"}, 5000, openHome);
+		$(document).click(function(){
+			$(".firstStep .separator").stop().animate({width : "100%"}, 100, openHome);
+		})
 	}
 
 
@@ -84,6 +96,7 @@ function initEvents(){
 
 function openHome(callback){
 
+	$(document).unbind("click");
 	$(window).resize();
 	$('.firstStep').animate({opacity : 0}, function(){
 		$(this).hide(0);
@@ -110,6 +123,7 @@ function leftClick(){
 	el.find('.contentBlock').animate({opacity : 0}, time);
 	el.animate({"margin-left": 0}, time, function(){
 		$('.thirdStep').css('display', 'block').addClass('lightBg');
+		$('.thirdStep #first .help').html("Choisis le sexe de la personne que tu veux complimenter");
 		$('.secondStep').hide(0);
 	});
 	$('.secondStep #rightBlock').animate({"margin-left" : "100%"}, time);
@@ -124,6 +138,7 @@ function rightClick(){
 		$('.secondStep #leftBlock').animate({"margin-left": "-100%"}, time);
 		el.animate({"margin-left": 0}, time, function(){
 		$('.thirdStep').css('display', 'block').addClass('darkBg');
+		$('.thirdStep #first .help').html("Choisis le sexe de la personne que tu veux vanner");
 		$('.secondStep').hide();
 	});
 	$(document).data('insulte', 1);
@@ -200,9 +215,9 @@ function drawFinal(datas)
 	var color = datas.color;
 	var link = datas.fbUrl;
 
-	/*var finalStr = new String(phrase);
-	finalStr = finalStr.replace("{prenom}", '<span class="prenom">'+prenom+'</span>');
-	$(".thirdStep #final #postit .content .phrase").html(finalStr);
+	var finalStr = new String(phrase);
+	finalStr = finalStr.replace("{prenom}", prenom);
+	/*$(".thirdStep #final #postit .content .phrase").html(finalStr);
 	$(".thirdStep #final #postit").removeClass().addClass(color);*/
 	$(".thirdStep #final #postit").html('<img src="'+datas.imgUrl+'"></img>')
 
@@ -213,8 +228,8 @@ function drawFinal(datas)
 		hideFb = true;
 	} else {
 		fbSharing.unbind('click').click(function(){
-			var title = "Fais Toi Plaiz";
-			var summary = "Toi aussi viens te faire plaiz en t'envoyant des fleurs ou en insultant tes amis!";
+			var title = finalStr.toUpperCase();
+			var summary = "Toi aussi fais toi plaiz, vannes tes amis ou complimente toi sur : http://www.fais-toi-plaiz.com";
 			var fbLink = "http://www.facebook.com/sharer.php?s=100&p[title]="+title
 						+"&p[url]="+encodeURIComponent(link)
 						+"&p[summary]="+summary+"&p[images][0]="
