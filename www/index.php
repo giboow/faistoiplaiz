@@ -5,6 +5,7 @@
 	?>
 	<head>
 		<title>Fais toi plaiz</title>
+		<link rel="icon" type="image/png" href="/img/favicon.png" />
 		<meta charset="utf-8">
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 		<style type="text/css">

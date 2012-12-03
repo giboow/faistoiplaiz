@@ -2,6 +2,7 @@
 	<head>
 	<title>Fais toi plaiz</title>
 		<meta charset="utf-8">
+		<link rel="icon" type="image/png" href="/img/favicon.png" />
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 		<style type="text/css">
 			<?php if (isset($_GET['datas'])) :?>

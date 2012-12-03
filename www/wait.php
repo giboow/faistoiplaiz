@@ -2,6 +2,7 @@
 <html>
 	<head>
 		<title>Fais toi plaiz!</title>
+		<link rel="icon" type="image/png" href="/img/favicon.png" />
 		<meta charset="utf-8">
 		<link rel="stylesheet" type="text/css" href="/css/style.css">
 		<script type="text/javascript" src="/js/jquery-1.8.2.min.js"></script>
