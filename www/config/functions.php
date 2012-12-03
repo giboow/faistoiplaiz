@@ -97,7 +97,7 @@ function deletePhrase($bdd, $id) {
 
 function addPhrase($bdd, $datas) {
 	$sexe = $datas['sexe'];
-	$insulte = (isset($data['insulte'])?1:0);
+	$insulte = (isset($datas['insulte'])?1:0);
 	$phrase = addslashes(utf8_decode($datas['phrase']));
 	$sql = "INSERT INTO `phrases` (`sexe`, `insulte`, `phrase`) VALUES ('".$sexe."', '".$insulte."', '".$phrase."');";
 	$bdd->exec($sql);
