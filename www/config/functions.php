@@ -5,6 +5,9 @@ $cache = new Cache(__DIR__.'/../cache/');
 
 function getPhrase($bdd, $sexe='M', $insulte=true, $id=null) {
 	global $cache;
+	$sexe = addslashes($sexe);
+	$insulte = (bool)$insulte;
+	$id = (int)$id;
 	if ($insulte) {
 		$insulte = 1;
 	} else {

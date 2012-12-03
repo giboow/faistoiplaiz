@@ -75,7 +75,7 @@ function initEvents(){
 	}
 
 
-	$('header#homeHeader .imgLogo').click(function(){$(document).attr('location', '/');});
+
 	$('#leftBlock').click(leftClick);
 	$('#rightBlock').click(rightClick);
 	$('.thirdStep .choice .male').click(function(){sexeChoice("M")});
@@ -97,6 +97,7 @@ function initEvents(){
 function openHome(callback){
 
 	$(document).unbind("click");
+	$('header#homeHeader .imgLogo').click(function(){$(document).attr('location', '/');});
 	$(window).resize();
 	$('.firstStep').animate({opacity : 0}, function(){
 		$(this).hide(0);
@@ -229,7 +230,7 @@ function drawFinal(datas)
 	} else {
 		fbSharing.unbind('click').click(function(){
 			var title = finalStr.toUpperCase();
-			var summary = "Toi aussi fais toi plaiz, vannes tes amis ou complimente toi sur : http://www.fais-toi-plaiz.com";
+			var summary = "Toi aussi viens te faire plaiz en t'envoyant des fleurs ou en vannant tes amis ! Viens sur http://www.fais-toi-plaiz.com";
 			var fbLink = "http://www.facebook.com/sharer.php?s=100&p[title]="+title
 						+"&p[url]="+encodeURIComponent(link)
 						+"&p[summary]="+summary+"&p[images][0]="

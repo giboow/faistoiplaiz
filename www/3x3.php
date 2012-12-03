@@ -71,9 +71,9 @@
 					<div id="presentation">
 						<div class="logo"></div>
 						<div class="text">
-							<div class="top">3 fois 3 c&apos;est le collectif incontournable de la cr&eacute;ation digital!</div>
-							<div class="middle">Anim&eacute; par cette envie d&apos;avancer et de cr&eacute;er des projets</div>
-							<div class="bottom">3 Filles et 3 Garcons ce sont lanc&eacute;s dans le projet "FAIS-TOI-PLAIZ.COM"</div>
+							<div class="top">3 fois 3 c&apos;est le collectif incontournable de la cr&eacute;ation digitale!</div>
+							<div class="middle">Anim&eacute;s par cette envie d&apos;avancer et de cr&eacute;er des projets</div>
+							<div class="bottom">3 Filles et 3 Gar&ccedil;ons se sont lanc&eacute;s dans le projet "FAIS-TOI-PLAIZ.COM"</div>
 						</div>
 						<div class="clear"></div>
 					</div>
@@ -120,8 +120,7 @@
 								<div class="profession">Chef de projet digital</div>
 								<div class="prez">"Cascadeuse professionnelle, je d&eacute;vale les escaliers de l&apos;agence comme personne"</div>
 								<div class="reseaux">
-									<div class="facebook" rel="https://www.facebook.com/john.eber.7?ref=tn_tnmn"></div>
-									<div class="twitter" rel="https://twitter.com/AGDMAG"></div>
+									<div class="facebook" rel="https://www.facebook.com/anais.duhau?fref=ts"></div>
 									<div class="clear"></div>
 								</div>
 							</div>
@@ -132,7 +131,8 @@
 								<div class="profession">Chef de projet digital</div>
 								<div class="prez">"Collectionne les catbread, trouve la vie plus belle en instagram, mais regrette le minitel"</div>
 								<div class="reseaux">
-									<div class="facebook" rel="https://www.facebook.com/anais.duhau"></div>
+									<div class="facebook" rel="https://www.facebook.com/marieeva?fref=ts"></div>
+									<div class="twitter" rel="https://twitter.com/marieeva"></div>
 									<div class="clear"></div>
 								</div>
 							</div>
@@ -141,8 +141,12 @@
 							<div class="text">
 								<div class="title">Joanne Dunoyer</div>
 								<div class="profession">Directrice de client&egrave;le</div>
-								<div class="prez"></div>
-								<div class="reseaux"></div>
+								<div class="prez">Particuli&egrave;rement digitale, L&eacute;g&egrave;rement spatiale, Naturellement amicale
+et Volontairement exp&eacute;rimentale</div>
+								<div class="reseaux">
+									<div class="facebook" rel="https://www.facebook.com/joanne.dunoyerdesegonzac"></div>
+									<div class="clear"></div>
+								</div>
 							</div>
 						</div>
 						<div class="clear"></div>

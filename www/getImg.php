@@ -20,12 +20,12 @@ $colors = array(
 		'color' => 'white',
 		'prenom' => 'vertFluo',
 	),
-	'bleupastel' => array(
+	/*'bleupastel' => array(
 		'bg' => '/img/affiches/bleupastel.png',
 		'logo' => '/img/logo/logojaune.png',
 		'color' => 'white',
 		'prenom' => 'jaune',
-	),
+	),*/
 	'orange' => array(
 		'bg' => '/img/affiches/orange.png',
 		'logo' => '/img/logo/logoblanc.png',
