@@ -160,7 +160,12 @@ function sexeChoice(sexe) {
 			$('.thirdStep #second input[name=prenom]').attr('placeholder', 'entre ton prenom');
 		}
 		$('.thirdStep #second').show(0).animate({opacity : 1}, time, function(){
-			$('.thirdStep #second form input[name=prenom]').focus();
+			var ph = $('.thirdStep #second form input[name=prenom]').attr("placeholder");
+			$('.thirdStep #second form input[name=prenom]').click(function(){
+				$(this).removeAttr('placeholder');
+			}).focusout(function(){
+				$(this).attr('placeholder', ph);
+			}).focus();
 		});
 	})
 
