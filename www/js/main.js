@@ -27,6 +27,7 @@ $(window).resize(function(){
 		var fbSharing = $(".thirdStep #final .fbSharing");
 		var next = $(".thirdStep #final .next");
 		var helpSharing = $(".thirdStep #final .helpSharing");
+		var rappelIndex = $(".thirdStep #final .rappelIndex");
 		postit.css('left', $(window).width()/2-postit.width()/2);
 
 
@@ -41,6 +42,10 @@ $(window).resize(function(){
 			top: fbSharing.position().top - helpSharing.height() - 10
 		});
 
+		rappelIndex.css({
+			left: position.left + postit.width() + 10,
+			top: 120
+		})
 
 		next.css({
 			left: position.left+postit.width()+next.width()/2,
@@ -251,6 +256,11 @@ function drawFinal(datas)
 		if(hideFb) {
 			fbSharing.unbind('click').hide();
 			$(".thirdStep #final .next").unbind('click').hide();
+			$(".thirdStep #final .rappelIndex").click(function(){
+				$('header#homeHeader .imgLogo').click();
+			}).show();
+		} else  {
+			$(".thirdStep #final .rappelIndex").unbind('click').hide();
 		}
 		$(this).hide();
 		$(".thirdStep #final").css({opacity:0}).show(0);

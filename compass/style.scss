@@ -435,6 +435,14 @@ footer#homeFooter{
 			height: 102px;
 			position: absolute;
 		}
+		.rappelIndex{
+			background-image: url('/img/rappel_black.png');
+			width: 188px;
+			height: 153px;
+			position: absolute;
+			display: none;
+			cursor: pointer;
+		}
 		.fbSharing{
 			background-image: url('/img/fb.png');
 			background-repeat: no-repeat;
@@ -654,6 +662,9 @@ footer#homeFooter{
 		.helpSharing{
 			background-image : url('/img/partage-white.png');
 		}
+		.rappelIndex{
+			background-image: url('/img/rappel_white.png');
+		}
 	}
 }
 
@@ -740,6 +751,7 @@ footer#homeFooter{
 			margin : 10px auto;
 			width: 100px;
 		}
+
 	}
 }
 

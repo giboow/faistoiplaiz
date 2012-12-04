@@ -160,6 +160,7 @@
 							<div class="next"></div>
 							<div class="fbSharing"></div>
 							<div class="ombre"></div>
+							<div class="rappelIndex"></div>
 							<div class="clear"></div>
 						</div>
 					</div>
