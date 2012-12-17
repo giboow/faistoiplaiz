@@ -226,7 +226,7 @@ function drawFinal(datas)
 	var color = datas.color;
 	var link = datas.fbUrl;
 
-	var finalStr = new String(phrase);
+	var finalStr = new String(datas.phraseD);
 	finalStr = finalStr.replace("{prenom}", prenom);
 	/*$(".thirdStep #final #postit .content .phrase").html(finalStr);
 	$(".thirdStep #final #postit").removeClass().addClass(color);*/
@@ -241,11 +241,16 @@ function drawFinal(datas)
 		fbSharing.unbind('click').click(function(){
 			var title = finalStr.toUpperCase();
 			var summary = "Toi aussi viens te faire plaiz en t'envoyant des fleurs ou en vannant tes amis ! Viens sur http://www.fais-toi-plaiz.com";
-			var fbLink = "http://www.facebook.com/sharer.php?s=100&p[title]="+title
-						+"&p[url]="+encodeURIComponent(link)
-						+"&p[summary]="+summary+"&p[images][0]="
-						+encodeURIComponent(datas.imgUrl);
+			var fbLink = "http://www.facebook.com/sharer.php?u="+datas.fbUrl;
 			//fbLink = link;
+								/*var fbLink = "https://www.facebook.com/dialog/feed?"
+  +"app_id=375265012567825"
+  +"&link="+encodeURIComponent(link)
+  +"&source="+encodeURIComponent(datas.imgUrl)
+  +"&name="+title
+  +"&description="+summary
+  +"&redirect_uri="+encodeURIComponent(link);
+  console.log(datas.imgUrl)*/
 			window.open(fbLink);
 		});
 	}

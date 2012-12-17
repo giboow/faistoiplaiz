@@ -43,13 +43,14 @@ function generateUrl($datas, $script=null) {
 }
 
 function encodeData($datas) {
-	$datasEncode = base64_encode(json_encode($datas));
+	$str =json_encode($datas);
+	$datasEncode = base64_encode($str);
 	return $datasEncode;
 }
 
 function decodeData($datas) {
-
-	$datasDecode = json_decode(base64_decode($datas));
+	$d = base64_decode($datas);
+	$datasDecode = json_decode($d);
 	return $datasDecode;
 }
 

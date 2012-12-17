@@ -140,12 +140,12 @@
 						</div>
 						<div class="member joanne">
 							<div class="text">
-								<div class="title">Joanne Dunoyer</div>
+								<div class="title">Joanne D.S</div>
 								<div class="profession">Directrice de client&egrave;le</div>
-								<div class="prez">Particuli&egrave;rement digitale, L&eacute;g&egrave;rement spatiale, Naturellement amicale
-et Volontairement exp&eacute;rimentale</div>
+								<div class="prez">Adopte projet, petit, grand, sociable, statique ou anim&eacute; pour amiti&eacute; forte et durable </div>
 								<div class="reseaux">
 									<div class="facebook" rel="https://www.facebook.com/joanne.dunoyerdesegonzac"></div>
+									<div class="twitter" rel="https://twitter.com/JoanneDS"></div>
 									<div class="clear"></div>
 								</div>
 							</div>

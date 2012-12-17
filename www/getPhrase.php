@@ -1,6 +1,6 @@
 <?php
 include_once 'config/functions.php';
-
+include_once 'config/shortenGoogle.php';
 $inputDatas = $_POST;
 
 
@@ -38,11 +38,18 @@ $datas["color"] = $colors[array_rand($colors)];
 $inputDatas['color'] = $datas["color"];
 
 
-if(!$id) {
-	$datas["fbUrl"] = generateUrl($inputDatas);
-}
-$datas['imgUrl'] = generateUrl($inputDatas, 'getImg.php');
+
+$ui = generateUrl($inputDatas, 'getImg.php');
+$datas['imgUrl'] = $ui;
+$datas["phraseD"] = utf8_encode($datas["phrase"]);
 $datas["phrase"] = htmlentities(utf8_encode($datas["phrase"]), ENT_XHTML);
+
+
+$inputDatas["phrase"] = str_replace("{prenom}", $inputDatas["prenom"], $datas["phrase"]);
+if(!$id) {
+	$u = generateUrl($inputDatas);
+	$datas["fbUrl"] = urlencode($u);
+}
 
 
 

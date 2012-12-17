@@ -91,6 +91,7 @@
 								'Houhouhaha' => array('url' => 'http://houhouhaha.fr/', 'img' => '/img/partenaires/HOUHOUHAHA.jpg'),
 								'Blog Esprit Design' => array('url' => 'http://www.blog-espritdesign.com/', 'img' => '/img/partenaires/BED.jpg'),
 								'ZEUTCH' => array('url' => 'http://www.zeutch.com/', 'img' => '/img/partenaires/ZEUTCH.jpg'),
+								'Vu Sur Le Web' => array('url' => 'http://vusurleweb.fr', 'img' => '/img/partenaires/VUSURLEWEB.jpg'),
 							);
 						$datas = array_chunk($partenaires, 6, true);?>
 						<?php foreach($datas as $partenaires) :?>

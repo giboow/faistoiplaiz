@@ -1,0 +1,5 @@
+SetEnv PHP_VER 5_4
+AuthName "Restricted"
+AuthType Basic
+AuthUserFile "/homez.584/faistoip/.htpasswd"
+Require valid-user

@@ -26,7 +26,7 @@ class Cache {
             return FALSE;
         }
 
-        if (filemtime($cache_path) < (time() - $expiration))
+        if (@filemtime($cache_path) < (time() - $expiration))
         {
             $this->clear($key);
             return FALSE;
