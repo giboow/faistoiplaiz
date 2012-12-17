@@ -5,6 +5,8 @@ $cache = new Cache(__DIR__.'/../cache/');
 
 function getPhrase($bdd, $sexe='M', $insulte=true, $id=null) {
 	global $cache;
+	global $dbName;
+	global $bdd;
 	$sexe = addslashes($sexe);
 	$insulte = (bool)$insulte;
 	$id = (int)$id;
@@ -13,9 +15,9 @@ function getPhrase($bdd, $sexe='M', $insulte=true, $id=null) {
 	} else {
 		$insulte = 0;
 	}
-	$cacheName = $sexe.$insulte;
+	$cacheName = $dbName.$sexe.$insulte;
 	if(($entries = $cache->get($cacheName)) === false) {
-		$sql = 'SELECT * FROM phrases WHERE sexe="'.$sexe.'" AND insulte='.$insulte;
+		$sql = 'SELECT * FROM '.$dbName.' WHERE sexe="'.$sexe.'" AND insulte='.$insulte;
 		$select =  $bdd->query($sql);
 		$datas = $select->setFetchMode(PDO::FETCH_ASSOC);
 		$v = $select->fetchAll();
@@ -56,7 +58,9 @@ function decodeData($datas) {
 
 
 function getPhrases ($bdd, $sexe=null, $insulte=null){
-	$sql = "SELECT * FROM phrases";
+	global $dbName;
+	global $bdd;
+	$sql = "SELECT * FROM ".$dbName;
 	if ($sexe || $insulte) {
 		$sql .= " WHERE";
 		if ($insulte !== null) {
@@ -77,30 +81,34 @@ function getPhrases ($bdd, $sexe=null, $insulte=null){
 function clearCaches()
 {
 	global $cache;
-	$cache->clear('M0');
-	$cache->clear('M1');
-	$cache->clear('F0');
-	$cache->clear('F1');
+	global $dbName;
+	$cache->clear($dbName.'M0');
+	$cache->clear($dbName.'M1');
+	$cache->clear($dbName.'F0');
+	$cache->clear($dbName.'F1');
 }
 
 function updatePhrase($bdd, $id, $phrase)
 {
-	$sql = "UPDATE phrases set phrase='".addslashes(utf8_decode($phrase))."' WHERE id=".$id;
+	global $dbName;
+	$sql = "UPDATE ".$dbName." set phrase='".addslashes(utf8_decode($phrase))."' WHERE id=".$id;
 	$select =  $bdd->exec($sql);
 	clearCaches();
 }
 
 function deletePhrase($bdd, $id) {
-	$sql = "DELETE FROM phrases WHERE id=".$id;
+	global $dbName;
+	$sql = "DELETE FROM ".$dbName." WHERE id=".$id;
 	$select =  $bdd->exec($sql);
 	clearCaches();
 }
 
 function addPhrase($bdd, $datas) {
+	global $dbName;
 	$sexe = $datas['sexe'];
 	$insulte = (isset($datas['insulte'])?1:0);
 	$phrase = addslashes(utf8_decode($datas['phrase']));
-	$sql = "INSERT INTO `phrases` (`sexe`, `insulte`, `phrase`) VALUES ('".$sexe."', '".$insulte."', '".$phrase."');";
+	$sql = "INSERT INTO `".$dbName."` (`sexe`, `insulte`, `phrase`) VALUES ('".$sexe."', '".$insulte."', '".$phrase."');";
 	$bdd->exec($sql);
 	clearCaches();
 }

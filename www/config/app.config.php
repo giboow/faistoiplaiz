@@ -12,6 +12,7 @@ $user = "faistoipbdd";
 $password = "anelka92";*/
 
 $conf = 'mysql:host='.$host.';dbname='.$dbName.';port='.$port.'charset=utf8';
+$dbName = 'noel';
 try {
 	$bdd = new PDO($conf, $user, $password);
 } catch(Exception $e) {
