@@ -4,18 +4,20 @@
 
 $white : #FFFFFF;
 $black : #000000;
-$lightGrey : #F6F6F6;
-$grey : #D3D3D3;
-$darkGrey : #ADADAD;
-$lightDark :#242727;
+$lightGrey : #B5B5B5;
+$grey : #969696;
+$darkGrey : #731B1A;
+$lightDark :#9F0100;
 $dark : #1C1C1C;
+$red : #9F0100;
+$darkRed : #731B1A;
 
 
 $vertfluo : #37EC8A;
 $jaune : #DFE930;
 $vert: #6AAF39;
 
-$lightBlue : #15B3F1;
+$lightBlue : #DFE930;
 
 // MIXINS
 
@@ -115,7 +117,8 @@ header#homeHeader{
 	position: absolute;
 	width: 100%;
 	height: 100%;
-	background-color: $black;
+	background-color: $darkRed;
+	//background-image : url(/img/header.jpg);
 	#logo{
 		position: relative;
 		text-align: center;
@@ -149,6 +152,7 @@ footer#homeFooter{
 	width: 100%;
 	height: 30px;
 	background-color: $black;
+	background-image: url('/img/footer.jpg');
 	bottom: 0;
 	opacity: 0;
 	border-top: solid 2px $white;
@@ -627,7 +631,7 @@ footer#homeFooter{
 }
 
 .lightBg {
-	@include background-image(radial-gradient(color-stops($lightGrey,$grey), circle contain));
+	@include background-image(radial-gradient(color-stops($lightGrey,$grey), circle));
 	color: $black;
 	input[type=submit] {
 		color: $black;
@@ -643,7 +647,7 @@ footer#homeFooter{
 }
 
 .darkBg{
-	@include background-image(radial-gradient(color-stops($lightDark, $dark), circle contain));
+	@include background-image(radial-gradient(color-stops($lightDark, $dark), circle));
 	color: $white;
 	input[type=submit] {
 		color: $white;
@@ -758,6 +762,7 @@ footer#homeFooter{
 #site.open{
 	header#homeHeader {
 		height: 103px;
+		background-image : url("/img/header.jpg");
 		border-top : solid 2px $white;
 		border-bottom : solid 2px $white;
 	}

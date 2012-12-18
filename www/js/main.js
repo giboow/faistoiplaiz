@@ -112,6 +112,7 @@ function openHome(callback){
 		$('header#homeHeader').animate({position: "fixe", height: 103}, time, function(){
 			$(this).css('border-top', 'solid 2px white');
 			$(this).css('border-bottom', 'solid 2px white');
+			$(this).css('background-image', 'url("/img/header.jpg")');
 			if($.isFunction(callback)) {
 				callback();
 			}
