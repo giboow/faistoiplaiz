@@ -11,6 +11,7 @@ $lightDark :#9F0100;
 $dark : #1C1C1C;
 $red : #9F0100;
 $darkRed : #731B1A;
+$redText : #FF3043;
 
 
 $vertfluo : #37EC8A;
@@ -892,6 +893,21 @@ footer#homeFooter{
 				}
 			}
 		}
+	}
+}
+
+#leftBlock.lightBg {
+	.title .last {
+		color: $redText;
+	}
+	.beginBt {
+		color: $redText;
+	}
+}
+
+#leftBlock.lightBg:hover{
+	.beginBt{
+		color: $black;
 	}
 }
 
