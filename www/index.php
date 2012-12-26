@@ -16,17 +16,22 @@
 			<?php endif;?>
 		</style>
 		<?php if (isset($_GET['datas'])) :?>
-				<?php 
+				<?php
 				$d = decodeData($_GET['datas']);
 				?>
 				<meta property="og:title" content="<?php echo strtoupper(html_entity_decode($d->phrase))?>" />
 		        <meta property="og:type" content="fun" />
-		        
+
 		        <meta property="og:image" content="<?php echo "http://".$_SERVER['HTTP_HOST']."/getImg.php".$_SERVER['REQUEST_URI']?>" />
 		        <meta property="og:description" content="Toi aussi viens te faire plaiz en t'envoyant des fleurs ou en vannant tes amis ! Viens sur http://www.fais-toi-plaiz.com" />
 		<?php endif;?>
 		<script type="text/javascript" src="/js/jquery-1.8.2.min.js"></script>
+		<script type="text/javascript" src="/js/jquery.snow.js"></script>
 		<script type="text/javascript">
+			$(document).ready(function(){
+		        $.fn.snow({flakeColor: '#FFFFFF' });
+			});
+
 			<?php if (isset($_GET['datas'])) :
 			?>
 				$(document).data('encodedData', jQuery.parseJSON('<?php echo  addslashes(json_encode($d));?>'));
